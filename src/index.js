@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import T_App from './App';
 import Test1 from './Test1';
+import { BrowserRouter } from "react-router-dom";
+import { Router, Route, Link, hashHistory } from 'react-router'
 
 
 import reportWebVitals from './reportWebVitals';
@@ -68,11 +70,17 @@ class Game extends React.Component {
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  //   <T_App />
+  //   <Test1 />
+  //   <Square />
+  // </React.StrictMode>,
+
+  <BrowserRouter>
     <T_App />
     <Test1 />
     <Square />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 // If you want to start measuring performance in your app, pass a function
