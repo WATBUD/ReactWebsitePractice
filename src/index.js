@@ -23,9 +23,10 @@ ReactDOM.render(
     {/* 
     <Test1 />
     <Square /> */}
-    <Routes>
-    <Route path="/" element={<EntryPage />} />
 
+   <EntryPage />
+    <Routes>
+      <Route path="/" element={<DemoListUI />} />
       <Route path="/DemoListUI" element={<DemoListUI />}></Route>
       <Route path="/NativeHTML" element={<NativeHTML />}></Route>
       {/* <Route path=":teasmId" element={<NativeHTML />} /> */}

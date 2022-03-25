@@ -4,7 +4,7 @@ import React, {useCallback} from 'react';
 import {useNavigate} from 'react-router-dom';
 
 function EntryPage() {
-  console.log('%c StackOverflowExample','background: red; color: white');
+  console.log('%c EntryPage','background: red; color: white');
   const navigate = useNavigate();
   const handleOnClick = useCallback(() => navigate('/DemoListUI', {replace: true}), [navigate]);
   return (
