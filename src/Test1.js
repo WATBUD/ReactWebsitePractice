@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import indexTitleIcon from './indexTitleIcon.png';
 function Test1() {
   return (

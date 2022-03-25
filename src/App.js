@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import indexTitleIcon from './indexTitleIcon.png';
 //import Square from './index.js';
 
