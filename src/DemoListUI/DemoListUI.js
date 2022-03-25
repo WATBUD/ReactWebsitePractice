@@ -38,8 +38,10 @@ class DemoListUI extends React.Component {
           <input id="toggle2" class="btn-toggle" type="checkbox" checked={this.state.candidateSelected} onChange={e => {this.onSelectCandidatesClick()}} />
           <label class="toggleBtn" for="toggle2">Practice Example</label>
           <ul>
-          <li><Link to={`/NativeHTML`} state={{ from: "props-v-state" }}>NativeHTML</Link></li>
-            {/* <li><Link to="/NativeHTML/:props-v-state">NativeHTML</Link></li> */}
+          {/* <li><Link to={`/NativeHTML:222`} state={{ from: "props-v-state" }}>NativeHTML</Link></li> */}
+          <li><Link to="/DemoListUI">DemoListUI</Link></li>
+
+          <li><Link to="/4554">ss</Link></li>
           </ul>
         </div>
       </div>
