@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import T_App from './App';
 import Test1 from './Test1';
+import DemoListUI from './DemoListUI/DemoListUI';
+
+
 import { BrowserRouter } from "react-router-dom";
 import { Router, Route, Link, hashHistory } from 'react-router'
 
@@ -80,6 +83,7 @@ ReactDOM.render(
     <T_App />
     <Test1 />
     <Square />
+    <DemoListUI />
   </BrowserRouter>,
   document.getElementById('root')
 );
