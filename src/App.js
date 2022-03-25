@@ -1,30 +1,30 @@
 import logo from './logo.svg';
 import indexTitleIcon from './indexTitleIcon.png';
-import Square from './index.js';
+//import Square from './index.js';
 
 
 import './App.css';
 
-function App() {
+function T_App() {
   return (
-    <div className="App">
+    <div className="App">    
       <header className="App-header">
       <img src={indexTitleIcon} className="App-logo" alt="indexTitleIcon" />
-      <img src={logo} className="App-logo" alt="logo" />
-        <p>
+      {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        {/* <p>
           Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
+        </p> */}
+        {/* <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
     </div>
   );
 }
 
-export default App;
+export default T_App;

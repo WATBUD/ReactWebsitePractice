@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import T_App from './App';
 import Test1 from './Test1';
 
 
@@ -69,8 +69,9 @@ class Game extends React.Component {
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <T_App />
     <Test1 />
+    <Square />
   </React.StrictMode>,
   document.getElementById('root')
 );
