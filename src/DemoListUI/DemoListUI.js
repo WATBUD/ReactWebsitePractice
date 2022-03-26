@@ -31,9 +31,14 @@ class DemoListUI extends React.Component {
       candidateSelected: !this.state.candidateSelected
     });
   }
+
   render() {
+    var sadas="3vh";
+    const host = {
+      Top: `${'3vh'}`,
+    };
     return (
-      <div id="Area1" class="GroupArea" >
+      <div id="Area1" style={{ marginTop: `${host.Top}`}} class="GroupArea" >
         <div id="Practice Example" class="list-group">
           <input id="toggle2" class="btn-toggle" type="checkbox" checked={this.state.candidateSelected} onChange={e => {this.onSelectCandidatesClick()}} />
           <label class="toggleBtn" for="toggle2">Practice Example</label>

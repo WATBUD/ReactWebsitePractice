@@ -10,9 +10,7 @@ function EntryPage() {
   return (
           <div id="NavArea" >
               <div id="HomePage" class="NavItemStyle" onClick={handleOnClick}
-              
-              
-              
+
               >HomePage</div>
           </div>
   );
