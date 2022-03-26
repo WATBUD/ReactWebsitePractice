@@ -1,5 +1,5 @@
 import indexTitleIcon from '../indexTitleIcon.png';
-import { Link,useParams  } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -33,20 +33,20 @@ class DemoListUI extends React.Component {
   }
 
   render() {
-    var sadas="3vh";
+    var sadas = "3vh";
     const host = {
       Top: `${'3vh'}`,
     };
     return (
-      <div id="Area1" style={{ marginTop: `${host.Top}`}} class="GroupArea" >
+      <div id="Area1" style={{ marginTop: `${host.Top}` }} class="GroupArea" >
         <div id="Practice Example" class="list-group">
-          <input id="toggle2" class="btn-toggle" type="checkbox" checked={this.state.candidateSelected} onChange={e => {this.onSelectCandidatesClick()}} />
+          <input id="toggle2" class="btn-toggle" type="checkbox" checked={this.state.candidateSelected} onChange={e => { this.onSelectCandidatesClick() }} />
           <label class="toggleBtn" for="toggle2">Practice Example</label>
           <ul>
-          {/* <li><Link to={`/NativeHTML:222`} state={{ from: "props-v-state" }}>NativeHTML</Link></li> */}
-          <li><Link to="/DemoListUI">DemoListUI</Link></li>
+            {/* <li><Link to={`/NativeHTML:222`} state={{ from: "props-v-state" }}>NativeHTML</Link></li> */}
+            <li><Link to="/DemoListUI">DemoListUI</Link></li>
 
-          <li><Link to="/4554">ss</Link></li>
+            <li><Link to="/NativeHTML">NativeHTML</Link></li>
           </ul>
         </div>
       </div>
