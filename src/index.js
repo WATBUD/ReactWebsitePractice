@@ -28,7 +28,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<DemoListUI />} />
       <Route path="/DemoListUI" element={<DemoListUI />}></Route>
-      <Route path="/NativeHTML" element={<NativeHTML />}></Route>
+      <Route path="/NativeHTML:inputEmbedURL" element={<NativeHTML />}></Route>
       {/* <Route path=":teasmId" element={<NativeHTML />} /> */}
 
     </Routes>

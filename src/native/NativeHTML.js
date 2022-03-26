@@ -5,8 +5,8 @@ import { useParams,useNavigate } from 'react-router-dom';
 export function withRouter(Children){
   return(props)=>{
 
-     const match  = {params: useParams()};
-     return <Children {...props}  match = {match}/>
+    const params  = useParams();
+    return <Children {...props} params={params}/>
  }
 }
 class NativeHTML extends React.Component {
@@ -142,13 +142,15 @@ class NativeHTML extends React.Component {
       Name: 'WebBluetooth',
     },
   ];
+  urlSafe="";
   //style="margin-top: 3vh;"
   constructor(props) {
     super(props);
-    // this.state = {
-    //   candidateSelected: false
-    // }
+    this.state = { value: 'Hello World' };
+
     console.log('%c params[page]', 'background: blue; color: red', props)
+    console.log('%c props.params', 'background: blue; color: red', props.params)
+
     // try {
     //   var target = this.customURLList.find((x) => x.Name == params['page']);
     //   if (target != undefined) {
@@ -158,14 +160,41 @@ class NativeHTML extends React.Component {
 
     // }
     //_navigateToPage();
+    try {
+      //console.log('%c props.params_inputEmbedURL', 'background: blue; color: red', props.params['inputEmbedURL'])
+      var target = this.customURLList.find((x) => x.Name === props.params['inputEmbedURL']);
+      console.log('%c target', 'background: blue; color: red', target)
+
+      if (target !== undefined) {
+        this.setURLContext(target.URL);
+      }
+    } catch (error) {
+      console.log('%c error', 'background: blue; color: red', error)
+
+    }
+  }
+  handleChange = (e) => {
+    this.setState({ value: e.target.value });
+  };
+  //this.router.navigate
+  setURLContext(URLstring = "") {
+    // document.getElementById('NavArea').scrollIntoView(
+    //   {
+    //     behavior: 'smooth', block: 'start', inline: 'nearest'
+    //   }
+    // );
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+    console.log('%c setURLContext', 'background: blue; color: red', URLstring)
+    this.urlSafe = URLstring;
 
   }
-
-
-
   render() {
     return (
-      <iframe title="embedIframe" id="embedIframe" width="100%" height="100%" frameBorder="0" src="urlSafe"></iframe>
+      <iframe title="embedIframe" id="embedIframe" style={{ marginTop:'3vh'}} width="100%" height="100%" frameBorder="0" src={this.urlSafe}></iframe>
     );
   }
 }
