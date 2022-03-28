@@ -44,7 +44,7 @@ class DemoListUI extends React.Component {
           <label class="toggleBtn" for="toggle2">Practice Example</label>
           <ul>
             {/* <li><Link to={`/NativeHTML:222`} state={{ from: "props-v-state" }}>NativeHTML</Link></li> */}
-            <li><Link to="/DemoListUI">DemoListUI</Link></li>
+            {/* <li><Link to="/DemoListUI">DemoListUI</Link></li> */}
 
             <li><Link to="/NativeHTML/GeneratorSlopeEquation">NativeHTML</Link></li>
           </ul>
