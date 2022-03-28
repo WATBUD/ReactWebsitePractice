@@ -12,133 +12,133 @@ export function withRouter(Children){
 class NativeHTML extends React.Component {
   customURLList = [
     {
-      URL: './Native HTML/Excel/Convert Excel File To JSON.html',
+      URL: '/Native HTML/Excel/Convert Excel File To JSON.html',
       Name: 'Convert Excel File To JSON',
     },
     {
-      URL: './Native HTML/Input/KeyDownArrayGenerator.html',
+      URL: '/Native HTML/Input/KeyDownArrayGenerator.html',
       Name: 'KeyDownArrayGenerator',
     },
     {
-      URL: './Native HTML/Input/GeneratorArrayText.html',
+      URL: '/Native HTML/Input/GeneratorArrayText.html',
       Name: 'GeneratorArrayText',
     },
     {
-      URL: './Native HTML/ScrollBarDemo/GetScrollEvent.html',
+      URL: '/Native HTML/ScrollBarDemo/GetScrollEvent.html',
       Name: 'GetScrollEvent',
     },
     {
-      URL: './Native HTML/Input/CompositionEvents.html',
+      URL: '/Native HTML/Input/CompositionEvents.html',
       Name: 'CompositionEvents',
     },
     {
-      URL: './Native HTML/Animate/Shooting Star.html',
+      URL: '/Native HTML/Animate/Shooting Star.html',
       Name: 'Shooting Star',
     },
     {
-      URL: './Native HTML/Animate/CircleRorateLoading.html',
+      URL: '/Native HTML/Animate/CircleRorateLoading.html',
       Name: 'CircleRorateLoading',
     },
     {
-      URL: './Native HTML/Animate/LoadingAnimation1.html',
+      URL: '/Native HTML/Animate/LoadingAnimation1.html',
       Name: 'LoadingAnimation1',
     },
     {
-      URL: './Native HTML/Animate/LoadingAnimation2.html',
+      URL: '/Native HTML/Animate/LoadingAnimation2.html',
       Name: 'LoadingAnimation2',
     },
     {
-      URL: './Native HTML/Animate/Progress_Bar_Rectangle.html',
+      URL: '/Native HTML/Animate/Progress_Bar_Rectangle.html',
       Name: 'Progress_Bar_Rectangle',
     },
     {
-      URL: './Native HTML/Animate/ButtonRippleEffect.html',
+      URL: '/Native HTML/Animate/ButtonRippleEffect.html',
       Name: 'ButtonRippleEffect',
     },
     {
-      URL: './Native HTML/Algorithm/GeneratorSlopeEquation.html',
+      URL: '/Native HTML/Algorithm/GeneratorSlopeEquation.html',
       Name: 'GeneratorSlopeEquation',
     },
     {
-      URL: './Native HTML/DynamicallyGenerated/CreateScrollBarListDemo.html',
+      URL: '/Native HTML/DynamicallyGenerated/CreateScrollBarListDemo.html',
       Name: 'CreateScrollBarListDemo',
     },
     {
-      URL: './Native HTML/Animate/RainBackgroundEffect.html',
+      URL: '/Native HTML/Animate/RainBackgroundEffect.html',
       Name: 'RainBackgroundEffect',
     },
     {
-      URL: './Native HTML/Animate/ShadowCircleAnimation.html',
+      URL: '/Native HTML/Animate/ShadowCircleAnimation.html',
       Name: 'ShadowCircleAnimation',
     },
     {
-      URL: './Native HTML/Animate/BorderFillAnimation.html',
+      URL: '/Native HTML/Animate/BorderFillAnimation.html',
       Name: 'BorderFillAnimation',
     },
     {
-      URL: './Native HTML/Input/KeyPressInterval.html',
+      URL: '/Native HTML/Input/KeyPressInterval.html',
       Name: 'KeyPressInterval',
     },
     {
-      URL: './Native HTML/DynamicallyGenerated/GenerateButton.html',
+      URL: '/Native HTML/DynamicallyGenerated/GenerateButton.html',
       Name: 'GenerateButton',
     },
     {
-      URL: './Native HTML/Animate/PolygonAnimation.html',
+      URL: '/Native HTML/Animate/PolygonAnimation.html',
       Name: 'PolygonAnimation',
     },
     {
-      URL: './Native HTML/CSSDemo/CSS_ArrowSymbol.html',
+      URL: '/Native HTML/CSSDemo/CSS_ArrowSymbol.html',
       Name: 'CSS_ArrowSymbol',
     },
     {
-      URL: './Native HTML/Mouse/ReflectionEventParameter.html',
+      URL: '/Native HTML/Mouse/ReflectionEventParameter.html',
       Name: 'ReflectionEventParameter',
     },
     {
-      URL: './Native HTML/CSSDemo/CSSReplaceClass.html',
+      URL: '/Native HTML/CSSDemo/CSSReplaceClass.html',
       Name: 'CSSReplaceClass',
     },
     {
-      URL: './Native HTML/Basic/JS_GetTime.html',
+      URL: '/Native HTML/Basic/JS_GetTime.html',
       Name: 'JS_GetTime',
     },
     {
-      URL: './Native HTML/ArraySort/BubbleSort.html',
+      URL: '/Native HTML/ArraySort/BubbleSort.html',
       Name: 'BubbleSort',
     },
     {
-      URL: './Native HTML/Animate/3DRotationControl.html',
+      URL: '/Native HTML/Animate/3DRotationControl.html',
       Name: '3DRotationControl',
     },
 
     {
-      URL: './Native HTML/CSSDemo/CenterAlignment.html',
+      URL: '/Native HTML/CSSDemo/CenterAlignment.html',
       Name: 'CenterAlignment',
     },
     {
-      URL: './Native HTML/CSSDemo/CustomizeBorderLength.html',
+      URL: '/Native HTML/CSSDemo/CustomizeBorderLength.html',
       Name: 'CustomizeBorderLength',
     },
     {
-      URL: './Native HTML/ScrollBarDemo/animateScroll.html',
+      URL: '/Native HTML/ScrollBarDemo/animateScroll.html',
       Name: 'animateScroll',
     },
 
     {
-      URL: './Native HTML/Input/Input_Range_Customized.html',
+      URL: '/Native HTML/Input/Input_Range_Customized.html',
       Name: 'Input_Range_Customized',
     },
     {
-      URL: './Native HTML/Input/Input_Type_File.html',
+      URL: '/Native HTML/Input/Input_Type_File.html',
       Name: 'Input_Type_File',
     },
     {
-      URL: './Native HTML/PracticeExample/Two-Sum-Less-Than-K.html',
+      URL: '/Native HTML/PracticeExample/Two-Sum-Less-Than-K.html',
       Name: 'Two-Sum-Less-Than-K',
     },
     {
-      URL: './Native HTML/PracticeExample/WebBluetooth.html',
+      URL: '/Native HTML/PracticeExample/WebBluetooth.html',
       Name: 'WebBluetooth',
     },
   ];
@@ -162,7 +162,13 @@ class NativeHTML extends React.Component {
     //_navigateToPage();
     try {
       //console.log('%c props.params_inputEmbedURL', 'background: blue; color: red', props.params['inputEmbedURL'])
-      var target = this.customURLList.find((x) => x.Name === props.params['inputEmbedURL']);
+      const paramsURL=props.params['inputEmbedURL'];
+
+
+      //paramsURL=this.removeTrailingSlash(paramsURL);
+      //console.log('%c result', 'background: blue; color: red', props.params['inputEmbedURL'],paramsURL)
+
+      var target = this.customURLList.find((x) => x.Name === paramsURL);
       console.log('%c target', 'background: blue; color: red', target)
 
       if (target !== undefined) {
@@ -173,6 +179,10 @@ class NativeHTML extends React.Component {
 
     }
   }
+  removeTrailingSlash(str) {
+    return str.replace(/\/+$/, '');
+  }
+  
   handleChange = (e) => {
     this.setState({ value: e.target.value });
   };
