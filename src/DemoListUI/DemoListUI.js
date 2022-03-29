@@ -46,7 +46,11 @@ class DemoListUI extends React.Component {
             {/* <li><Link to={`/NativeHTML:222`} state={{ from: "props-v-state" }}>NativeHTML</Link></li> */}
             {/* <li><Link to="/DemoListUI">DemoListUI</Link></li> */}
 
-            <li><Link to="/NativeHTML/GeneratorSlopeEquation">NativeHTML</Link></li>
+            <li><Link to="/NativeHTML/GeneratorSlopeEquation">GeneratorSlopeEquation</Link></li>
+            <li><Link to="/NativeHTML/Canvas Fireball Follow Exercise">Canvas Fireball Follow Exercise</Link></li>
+
+            
+
           </ul>
         </div>
       </div>

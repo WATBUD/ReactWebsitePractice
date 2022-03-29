@@ -96,6 +96,10 @@ class NativeHTML extends React.Component {
       Name: 'ReflectionEventParameter',
     },
     {
+      URL: '/Native HTML/Display/Canvas Fireball Follow Exercise.html',
+      Name: 'Canvas Fireball Follow Exercise',
+    },
+    {
       URL: '/Native HTML/CSSDemo/CSSReplaceClass.html',
       Name: 'CSSReplaceClass',
     },
