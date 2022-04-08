@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import EntryPage from './EntryPage';
+import EffectHook from './EffectHook';
 import Test1 from './Test1';
 import DemoListUI from './DemoListUI/DemoListUI';
 import { BrowserRouter, HashRouter, Routes, Route, Link,useParams } from "react-router-dom";
@@ -30,6 +31,7 @@ ReactDOM.render(
       <Route path='*' element={<DemoListUI />} />
       <Route path="/DemoListUI" element={<DemoListUI />}></Route>
       <Route path="/NativeHTML/:inputEmbedURL" element={<NativeHTML />}></Route>
+      <Route path="/EffectHook" element={<EffectHook />}></Route>
       {/* <Route path=":teasmId" element={<NativeHTML />} /> */}
 
     </Routes>

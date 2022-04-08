@@ -48,6 +48,7 @@ class DemoListUI extends React.Component {
 
             <li><Link to="/NativeHTML/GeneratorSlopeEquation">GeneratorSlopeEquation</Link></li>
             <li><Link to="/NativeHTML/Canvas Fireball Follow Exercise">Canvas Fireball Follow Exercise</Link></li>
+            <li><Link to="/EffectHook">EffectHook</Link></li>
 
             
 
