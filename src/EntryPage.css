@@ -27,7 +27,7 @@
 
 }
 #NavArea{
-   position: fixed;
+   position:sticky;
    width: 100%;
    height: 29px;
    background: rgb(45, 45, 45);

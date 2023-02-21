@@ -25,7 +25,7 @@ function EntryPage() {
   const handleOnClick = useCallback(() => navigate('/DemoListUI', {replace: true}), [navigate]);
   return (
           <div id="NavArea" >
-              <div id="HomePage" class="NavItemStyle" onClick={handleOnClick}
+              <div id="HomePage" className="NavItemStyle" onClick={handleOnClick}
 
               >HomePage</div>
           </div>

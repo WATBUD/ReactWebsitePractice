@@ -1,16 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import EntryPage from './EntryPage';
+import DemoListUI from './DemoListUI/DemoListUI';
 import EffectHook from './EffectHook';
+import EntryPage from './EntryPage';
+import './index.css';
+import OptionsMap from './PracticeTheBasicUI/OptionsMap';
+import CSSTutorial from './Tutorial/CSSTutorial';
+import ProgressDIY from './Tutorial/ProgressDIY';
+
 import T_useCallback from './T_useCallback';
 
-import Test1 from './Test1';
-import DemoListUI from './DemoListUI/DemoListUI';
-import { BrowserRouter, HashRouter, Routes, Route, Link,useParams } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NativeHTML from './native/NativeHTML';
 
 import reportWebVitals from './reportWebVitals';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // ========================================
 
@@ -22,19 +26,24 @@ ReactDOM.render(
   // <HashRouter>
   //   <Route path="/native" component={native}/>
   // </HashRouter>,
+  
   <BrowserRouter>
     {/* 
     <Test1 />
     <Square /> */}
+    <EntryPage />
 
-   <EntryPage />
     <Routes>
       <Route path="/" element={<DemoListUI />} />
       <Route path='*' element={<DemoListUI />} />
       <Route path="/DemoListUI" element={<DemoListUI />}></Route>
       <Route path="/NativeHTML/:inputEmbedURL" element={<NativeHTML />}></Route>
       <Route path="/EffectHook" element={<EffectHook />}></Route>
+      <Route path="/OptionsMap" element={<OptionsMap />}></Route>
       <Route path="/T_useCallback" element={<T_useCallback />}></Route>
+      <Route path="/CSSTutorial" element={<CSSTutorial />}></Route>
+      <Route path="/ProgressDIY" element={<ProgressDIY />}></Route>
+
 
       {/* <Route path=":teasmId" element={<NativeHTML />} /> */}
 
