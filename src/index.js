@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import DemoListUI from './DemoListUI/DemoListUI';
-import EffectHook from './EffectHook';
 import EntryPage from './EntryPage';
 import './index.css';
 import OptionsMap from './PracticeTheBasicUI/OptionsMap';
 import CSSTutorial from './Tutorial/CSSTutorial';
-import ProgressDIY from './Tutorial/ProgressDIY';
+import ProgressDIYUse from './Tutorial/ProgressDIYUse';
+import UseState from './Tutorial/UseState';
+import TestUseCallback from './Tutorial/TestUseCallback';
+import TestHooks from './Tutorial/TestHooks';
+import RPG_Game from './RPG/RPG_Game';
 
-import T_useCallback from './T_useCallback';
+import TraversingAndRendering from './Tutorial/TraversingAndRendering';
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NativeHTML from './native/NativeHTML';
@@ -17,7 +20,6 @@ import reportWebVitals from './reportWebVitals';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // ========================================
-
 ReactDOM.render(
   // <React.StrictMode>
   //   <Test1 />
@@ -32,17 +34,21 @@ ReactDOM.render(
     <Test1 />
     <Square /> */}
     <EntryPage />
-
+    {/* <ProgressDIYUse/> */}
     <Routes>
       <Route path="/" element={<DemoListUI />} />
       <Route path='*' element={<DemoListUI />} />
       <Route path="/DemoListUI" element={<DemoListUI />}></Route>
       <Route path="/NativeHTML/:inputEmbedURL" element={<NativeHTML />}></Route>
-      <Route path="/EffectHook" element={<EffectHook />}></Route>
       <Route path="/OptionsMap" element={<OptionsMap />}></Route>
-      <Route path="/T_useCallback" element={<T_useCallback />}></Route>
+      <Route path="/useCallback" element={<useCallback />}></Route>
       <Route path="/CSSTutorial" element={<CSSTutorial />}></Route>
-      <Route path="/ProgressDIY" element={<ProgressDIY />}></Route>
+      <Route path="/ProgressDIYUse" element={<ProgressDIYUse />}></Route>
+      <Route path="/UseState" element={<UseState />}></Route>
+      <Route path="/TestUseCallback" element={<TestUseCallback />}></Route>
+      <Route path="/TestHooks" element={<TestHooks />}></Route>
+      <Route path="/TraversingAndRendering" element={<TraversingAndRendering />}></Route>
+      <Route path="/RPG_Game" element={<RPG_Game />}></Route>
 
 
       {/* <Route path=":teasmId" element={<NativeHTML />} /> */}

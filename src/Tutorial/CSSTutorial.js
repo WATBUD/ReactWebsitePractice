@@ -1,5 +1,10 @@
 import React from "react";
 import './CSSTutorial.css';
+import ChildComponent from 'Component/ChildComponent';
+const bgcolor={
+  background: 'blue',
+  color:'yellow'
+}
 const options = [
   {
     label: "Apple",
@@ -18,15 +23,12 @@ const options = [
     value: "pineapple",
   },
 ];
-const bgcolor={
-  background: 'blue',
-  color:'yellow'
-}
 class CSSTutorial extends React.Component {
   render() {
     return (
       <div id="App" >
         <div>
+        <ChildComponent />
           <select className="bgColor">
             {options.map((option, index) => (
               <option key={index} value={option.value}>{option.label}</option>

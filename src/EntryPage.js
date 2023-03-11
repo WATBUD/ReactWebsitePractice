@@ -1,7 +1,8 @@
-import indexTitleIcon from './indexTitleIcon.png';
+import React, { useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './EntryPage.css';
-import React, {useCallback} from 'react';
-import {useNavigate} from 'react-router-dom';
+
+
 
 function EntryPage() {
   console.log('%c EntryPage','background: red; color: white');
@@ -22,7 +23,10 @@ function EntryPage() {
       //console.log('%c googleapis_error','background: red; color: white',e);
       /*發生錯誤時要做的事情*/
   })
+
+
   const handleOnClick = useCallback(() => navigate('/DemoListUI', {replace: true}), [navigate]);
+  
   return (
           <div id="NavArea" >
               <div id="HomePage" className="NavItemStyle" onClick={handleOnClick}
