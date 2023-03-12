@@ -63,11 +63,10 @@ class CustomName extends Component {
   render() {
     //const { myClassInstance } = this.state;
     //console.log('%c myClassInstance:', 'color: green', myClassInstance);
-
+    
     return (
       <section id="MainScreen">
-      <div className="visible-scrollbar" 
-      style={{position: 'absolute',background: 'red',width:'50%',height:'50%',zIndex: 0}}>
+      <div id="LogMessage">
         <ul style={{display: 'flex',flexDirection: 'column-reverse'}}>
         {this.state.myNativeClassValue._LogMessage.map((item, index) => (
           <li key={index}>{item}</li>
