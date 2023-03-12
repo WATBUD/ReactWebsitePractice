@@ -366,10 +366,12 @@ export class CentralManager{
   //   return _list;
   // }
   
-
-
-
   centralBeforeDestroy(){
+    CentralManager.instance = null;
+    this._LogMessage=[];
+    this.timerlist.forEach(element => {
+      clearInterval(element);
+    });
     var _list = this._monsterManager.getMonsterMaplist();
     _list.push(this._GamePlayer);
     //this._GamePlayer.beforeDestroy();

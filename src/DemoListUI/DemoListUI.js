@@ -7,7 +7,7 @@ import './DemoListUI.css';
 //     <div id="Area1" class="GroupArea" >
 //       <div id="Practice Example" class="list-group">
 //         <input id="toggle2" class="btn-toggle" type="checkbox" checked />
-//           <label class="toggleBtn" for="toggle2">Practice Example</label>
+//           <label class="toggleBtn" htmlFor="toggle2">Practice Example</label>
 //           <ul>
 //             <li><Link to="/Line_Graph">Line_Graph</Link></li>
 //           </ul>
@@ -41,7 +41,7 @@ class DemoListUI extends React.Component {
       <div id="Area1" style={{ marginTop: `${host.Top}` }} className="GroupArea" >
         <div id="Practice Example" className="list-group">
           <input id="toggle2" className="btn-toggle" type="checkbox" checked={this.state.candidateSelected} onChange={e => { this.onSelectCandidatesClick() }} />
-          <label className="toggleBtn" for="toggle2">Practice Example</label>
+          <label className="toggleBtn" htmlFor="toggle2">Practice Example</label>
           <ul>
             {/* <li><Link to={`/NativeHTML:222`} state={{ from: "props-v-state" }}>NativeHTML</Link></li> */}
             {/* <li><Link to="/DemoListUI">DemoListUI</Link></li> */}
@@ -55,7 +55,7 @@ class DemoListUI extends React.Component {
             <li key="8"><Link to="/UseState">useState</Link></li>
             <li key="9"><Link to="/TestUseCallback">useCallback</Link></li>
             <li key="10"><Link to="/TraversingAndRendering">TraversingAndRendering</Link></li>
-            <li key="10"><Link to="/RPG_Game">RPG_Game</Link></li>
+            <li key="11"><Link to="/RPG_Game">RPG_Game</Link></li>
 
           </ul>
         </div>
