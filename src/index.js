@@ -9,6 +9,8 @@ import ProgressDIYUse from './Tutorial/ProgressDIYUse';
 import UseState from './Tutorial/UseState';
 import TestUseCallback from './Tutorial/TestUseCallback';
 import TestHooks from './Tutorial/TestHooks';
+import UseOtherComponents from './Tutorial/UseOtherComponents';
+
 import RPG_Game from './RPG/RPG_Game';
 
 import TraversingAndRendering from './Tutorial/TraversingAndRendering';
@@ -49,8 +51,7 @@ ReactDOM.render(
       <Route path="/TestHooks" element={<TestHooks />}></Route>
       <Route path="/TraversingAndRendering" element={<TraversingAndRendering />}></Route>
       <Route path="/RPG_Game" element={<RPG_Game />}></Route>
-
-
+      <Route path="/UseOtherComponents" element={<UseOtherComponents />}></Route>
       {/* <Route path=":teasmId" element={<NativeHTML />} /> */}
 
     </Routes>

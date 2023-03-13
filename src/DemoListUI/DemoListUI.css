@@ -1,14 +1,4 @@
 
-li:hover {
-    color: green;
-}
-li:active {
-    color: red;
-}
-li{
-    color: blue;
-    margin: 10px 0;
-}
 :host{
     margin-top: 3vh;
 }

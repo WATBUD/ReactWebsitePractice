@@ -53,10 +53,10 @@ class DemoListUI extends React.Component {
             <li key="7"><Link to="/ProgressDIYUse">ProgressDIYUse</Link></li>
             <li key="3"><Link to="/TestHooks">useHooks</Link></li>
             <li key="8"><Link to="/UseState">useState</Link></li>
-            <li key="9"><Link to="/TestUseCallback">useCallback</Link></li>
+            <li key="9"><Link to="/TestUseCallback" >useCallback</Link></li>
             <li key="10"><Link to="/TraversingAndRendering">TraversingAndRendering</Link></li>
             <li key="11"><Link to="/RPG_Game">RPG_Game</Link></li>
-
+            <li ><Link to="/UseOtherComponents">UseOtherComponents</Link></li>
           </ul>
         </div>
       </div>
