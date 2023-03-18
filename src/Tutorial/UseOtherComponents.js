@@ -6,8 +6,6 @@ function ChildComponent(props) {
       <h2>----------Child Component----------</h2>
       <p>Count: {props.count}</p>
       <button onClick={props.increment}>Increment</button>
-      <button onClick={props.increment2}>Increment2</button>
-
     </div>
   );
 }
@@ -18,7 +16,9 @@ function ParentComponent() {
   return (
     <div>
       <h1>----------Parent Component----------</h1>
-      <ChildComponent count={count} increment={()=>setCount(count + 1)} increment2={()=>setCount(count + 1)} />
+      <p>Count: {count}</p>
+  
+      <ChildComponent count={count} increment={()=>setCount(count + 1)} />
     </div>
   );
 }

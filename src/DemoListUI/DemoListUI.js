@@ -55,8 +55,18 @@ class DemoListUI extends React.Component {
             <li key="8"><Link to="/UseState">useState</Link></li>
             <li key="9"><Link to="/TestUseCallback" >useCallback</Link></li>
             <li key="10"><Link to="/TraversingAndRendering">TraversingAndRendering</Link></li>
-            <li key="11"><Link to="/RPG_Game">RPG_Game</Link></li>
+            <li key="11"><Link to="/RpgGame">RPG_Game</Link></li>
             <li ><Link to="/UseOtherComponents">UseOtherComponents</Link></li>
+            <li ><Link to="/TutorialTemplate">TutorialTemplate</Link></li>
+            <li ><Link to="/ReactFragment">ReactFragment</Link></li>
+            {/* <li ><Link to="/FetchOpenAI">FetchOpenAI</Link></li> */}
+            <li ><Link to="/UseContext">UseContext</Link></li>
+            <li ><Link to="/PalindromeNumber">PalindromeNumber</Link></li>
+            <li ><Link to="/RomanToInteger">RomanToInteger</Link></li>
+            <li ><Link to="/LongestCommonPrefix">LongestCommonPrefix</Link></li>
+            <li ><Link to="/ValidParentheses">ValidParentheses</Link></li>
+            <li ><Link to="/MergeTwoSortedLists">MergeTwoSortedLists</Link></li>
+
           </ul>
         </div>
       </div>

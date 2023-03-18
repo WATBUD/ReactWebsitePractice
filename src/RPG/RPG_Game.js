@@ -72,43 +72,43 @@ class CustomName extends Component {
     //const { myClassInstance } = this.state;
     //console.log('%c myClassInstance:', 'color: green', myClassInstance);
     return (
-      <React.Fragment>
-      <section id="MainScreen">
-      <div id="LogMessage">
-        <ul style={{display: 'flex',flexDirection: 'column-reverse'}}>
-        {this.state.myNativeClassValue._LogMessage.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-        </ul>
-      </div>
-      <canvas id="MiniMap">
-      </canvas>
-      <div id="DisplayOptions">
-      <button type="button" className='Item' style={{background:'#1eff007a'}} onClick={()=> this.CentralManager._BackpackBool = !this.CentralManager._BackpackBool}>背包</button>
-      <button type="button" className='Item' style={{background:'#000dffe0'}} onClick={()=> this.CentralManager._AbilityTableBool = !this.CentralManager._AbilityTableBool}>能力</button>
-      <button type="button" className='Item' style={{background:'#000dffe0'}} onClick={()=> this.CentralManager.viewAllCoordinates()}>顯示怪物與玩家資訊</button>
+      <section id="original">
+        <section id="MainScreen">
+          <div id="LogMessage">
+            <ul style={{ display: 'flex', flexDirection: 'column-reverse' }}>
+              {this.state.myNativeClassValue._LogMessage.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+          <canvas id="MiniMap">
+          </canvas>
+          <div id="DisplayOptions">
+            <button type="button" className='Item' style={{ background: '#1eff007a' }} onClick={() => this.CentralManager._BackpackBool = !this.CentralManager._BackpackBool}>背包</button>
+            <button type="button" className='Item' style={{ background: '#000dffe0' }} onClick={() => this.CentralManager._AbilityTableBool = !this.CentralManager._AbilityTableBool}>能力</button>
+            <button type="button" className='Item' style={{ background: '#000dffe0' }} onClick={() => this.CentralManager.viewAllCoordinates()}>顯示怪物與玩家資訊</button>
 
-      </div> 
-      
-      {this.CentralManager._BackpackBool ? (
-              <div className="FillAreaScreen" style={{background:'#1eff007a'}}>
+          </div>
+
+          {this.CentralManager._BackpackBool ? (
+            <div className="FillAreaScreen" style={{ background: '#1eff007a' }}>
               BackpackBool
-              </div>) : null}
-      {this.CentralManager._AbilityTableBool ? (
-              <div className="FillAreaScreen" style={{background:'#000dffe0'}}>
+            </div>) : null}
+          {this.CentralManager._AbilityTableBool ? (
+            <div className="FillAreaScreen" style={{ background: '#000dffe0' }}>
               AbilityTableBool
-              </div>) : null}
+            </div>) : null}
 
 
-  
 
-    </section>
-    {this.CentralManager._CoordinatesPanal ? (
-      <ArrayPanel 
-      height={'80%'}
-      items={this.CentralManager.obtainBiologicalInformationOnTheMap()}/>) : null}
-    </React.Fragment>
 
+        </section>
+
+        {this.CentralManager._CoordinatesPanal ? (
+          <ArrayPanel
+            height={'80%'}
+            items={this.CentralManager.obtainBiologicalInformationOnTheMap()} />) : null}
+      </section>
     );
   }
 
