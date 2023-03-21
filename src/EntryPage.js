@@ -37,9 +37,4 @@ function EntryPage() {
 }
 
 
-function doThis() {
-  console.log('%c doThis','background: red; color: white',doThis);
-
-
-}
 export default EntryPage;

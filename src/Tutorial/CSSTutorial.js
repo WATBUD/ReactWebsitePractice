@@ -29,7 +29,8 @@ class CSSTutorial extends React.Component {
       <div id="App" >
         <div>
         <ChildComponent />
-          <select className="bgColor">
+          <select style={bgcolor}> 
+          {/* className="bgColor"  */}
             {options.map((option, index) => (
               <option key={index} value={option.value}>{option.label}</option>
             ))}

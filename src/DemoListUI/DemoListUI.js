@@ -66,6 +66,7 @@ class DemoListUI extends React.Component {
             <li ><Link to="/LongestCommonPrefix">LongestCommonPrefix</Link></li>
             <li ><Link to="/ValidParentheses">ValidParentheses</Link></li>
             <li ><Link to="/MergeTwoSortedLists">MergeTwoSortedLists</Link></li>
+            <li ><Link to="/MergeKSortedLists">MergeKSortedLists</Link></li>
 
           </ul>
         </div>

@@ -18,29 +18,29 @@ const optionsA = [
     value: "pineapple",
   },
 ];
-const optionsB = [
-  {
-    label: "optionsBApple",
-    value: "apple",
-  },
-  {
-    label: "optionsBMango",
-    value: "mango",
-  },
+// const optionsB = [
+//   {
+//     label: "optionsBApple",
+//     value: "apple",
+//   },
+//   {
+//     label: "optionsBMango",
+//     value: "mango",
+//   },
 
-];
+// ];
 
-const optionsC = [
-  {
-    label: "optionsC",
-    value: "apple",
-  },
-  {
-    label: "optionsCMango",
-    value: "mango",
-  },
+// const optionsC = [
+//   {
+//     label: "optionsC",
+//     value: "apple",
+//   },
+//   {
+//     label: "optionsCMango",
+//     value: "mango",
+//   },
 
-];
+// ];
 
 class OptionsMap extends React.Component {
   render() {
@@ -50,7 +50,7 @@ class OptionsMap extends React.Component {
 
         <div className="select-container">
              <ArrayComponent DynamicOptions={
-              optionsC
+              optionsA
              }/>
         </div>
       </div>

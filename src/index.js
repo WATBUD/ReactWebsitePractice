@@ -22,9 +22,7 @@ import RomanToInteger from './Tutorial/RomanToInteger';
 import LongestCommonPrefix from './Tutorial/LongestCommonPrefix';
 import ValidParentheses from './Tutorial/ValidParentheses';
 import MergeTwoSortedLists from './Tutorial/MergeTwoSortedLists';
-
-
-
+import MergeKSortedLists from './Tutorial/MergeKSortedLists';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NativeHTML from './native/NativeHTML';
 import reportWebVitals from './reportWebVitals';
@@ -70,9 +68,10 @@ ReactDOM.render(
       <Route path="/LongestCommonPrefix" element={<LongestCommonPrefix />}></Route>
       <Route path="/ValidParentheses" element={<ValidParentheses />}></Route>
       <Route path="/MergeTwoSortedLists" element={<MergeTwoSortedLists />}></Route>
+      <Route path="/MergeKSortedLists" element={<MergeKSortedLists />}></Route>
 
 
-
+      
 
       {/* <Route path=":teasmId" element={<NativeHTML />} /> */}
 

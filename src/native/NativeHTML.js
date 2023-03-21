@@ -1,6 +1,6 @@
 import React from 'react';
 import './NativeHTML.css';
-import { useParams,useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 export function withRouter(Children){
   return(props)=>{
