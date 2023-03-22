@@ -67,7 +67,10 @@ class DemoListUI extends React.Component {
             <li ><Link to="/ValidParentheses">ValidParentheses</Link></li>
             <li ><Link to="/MergeTwoSortedLists">MergeTwoSortedLists</Link></li>
             <li ><Link to="/MergeKSortedLists">MergeKSortedLists</Link></li>
-
+            <li ><Link to="/FindSumOfFirst_N_Natural_Numbers">FindSumOfFirst_N_Natural_Numbers</Link></li>
+            <li ><Link to="/MergeArraysAndSortSlice">MergeArraysAndSortSlice</Link></li>
+            <li ><Link to="/FindFirstSingleNumber">FindFirstSingleNumber</Link></li>
+            <li ><Link to="/LengthOfLongestSubstring">LengthOfLongestSubstring</Link></li>
           </ul>
         </div>
       </div>

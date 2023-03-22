@@ -23,9 +23,19 @@ import LongestCommonPrefix from './Tutorial/LongestCommonPrefix';
 import ValidParentheses from './Tutorial/ValidParentheses';
 import MergeTwoSortedLists from './Tutorial/MergeTwoSortedLists';
 import MergeKSortedLists from './Tutorial/MergeKSortedLists';
+import FindSumOfFirstNNaturalNumbers from './Tutorial/FindSumOfFirst_N_Natural_Numbers';
+import MergeArraysAndSortSlice from './Tutorial/MergeArraysAndSortSlice';
+import FindFirstSingleNumber from './Tutorial/FindFirstSingleNumber';
+import LengthOfLongestSubstring from './Tutorial/LengthOfLongestSubstring';
+
+
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NativeHTML from './native/NativeHTML';
 import reportWebVitals from './reportWebVitals';
+
+
+
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // ========================================
@@ -69,10 +79,12 @@ ReactDOM.render(
       <Route path="/ValidParentheses" element={<ValidParentheses />}></Route>
       <Route path="/MergeTwoSortedLists" element={<MergeTwoSortedLists />}></Route>
       <Route path="/MergeKSortedLists" element={<MergeKSortedLists />}></Route>
-
+      <Route path="/FindSumOfFirst_N_Natural_Numbers" element={<FindSumOfFirstNNaturalNumbers />}></Route>
+      <Route path="/MergeArraysAndSortSlice" element={<MergeArraysAndSortSlice />}></Route>
+      <Route path="/FindFirstSingleNumber" element={<FindFirstSingleNumber />}></Route>
+      <Route path="/LengthOfLongestSubstring" element={<LengthOfLongestSubstring />}></Route>
 
       
-
       {/* <Route path=":teasmId" element={<NativeHTML />} /> */}
 
     </Routes>
