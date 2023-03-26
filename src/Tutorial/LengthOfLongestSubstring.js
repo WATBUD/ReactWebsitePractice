@@ -1,21 +1,4 @@
 import React from 'react';
-function a(s){
-  let maxLength=0;
-  let left=0;
-  let right=0;
-  const set = new Set();
-  while(right<s.length){
-    if(!set.has[s[right]]){
-       set.add(s[right++]);
-       maxLength=Math.max(maxLength,set.size);
-    }
-    else{
-      set.delete(s[left++]);
-    }
-  }
-}
-
-
 
 
 function lengthOfLongestSubstring(s) {
