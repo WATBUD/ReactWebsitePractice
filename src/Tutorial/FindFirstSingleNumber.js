@@ -6,17 +6,12 @@ function singleNumber(nums) {
   let result = 0;
   for (let i = 0; i < nums.length; i++) {
     console.log('%c result', 'background: blue; color: white',result);
-    result  = nums[i];
+    result  ^= nums[i];
   }
   return result;
 }
-console.log('%c singleNumber', 'background: blue; color: white',singleNumber([4,1,2,1,2]));
-let num2 = 3;
-console.log('%c binary3', 'background: blue; color: white',num2.toString(2).padStart(4, '0'));
-
 function isSingleNumber(element) {
 console.log('%c isSingleNumber()', 'background: blue; color: white',element);
-
   // 使用indexOf和lastIndexOf方法來找到元素在陣列中第一次和最後一次出現的位置
   let firstIndex = arr.indexOf(element);
   let lastIndex = arr.lastIndexOf(element);
@@ -29,8 +24,7 @@ console.log('%c isSingleNumber()', 'background: blue; color: white',element);
    return false;
 }
 
-let firstSingleNumber = arr.find(isSingleNumber);
-console.log(firstSingleNumber); // 3
+
 
 function findFirstSingleNumber(nums) {
   let map = new Map();
@@ -51,6 +45,11 @@ function findFirstSingleNumber(nums) {
 
 
 function customName() {
+  let firstSingleNumber = arr.find(isSingleNumber);
+  console.log(firstSingleNumber); // 3
+  console.log('%c singleNumber', 'background: blue; color: white',singleNumber([4,1,2,1,2]));
+let num2 = 3;
+console.log('%c binary3', 'background: blue; color: white',num2.toString(2).padStart(4, '0'));
   return (
     <div>
       <p>findSingleNumber:[5, 2, 7,9,1]= {findFirstSingleNumber([5, 2, 7,9,1])}</p>
