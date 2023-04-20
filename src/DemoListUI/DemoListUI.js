@@ -19,11 +19,12 @@ import './DemoListUI.css';
 //   position: 'absolute', marginTop: '100px'
 // };
 class DemoListUI extends React.Component {
-
   constructor(props) {
     super(props);
+
     this.state = {
-      candidateSelected: false
+      candidateSelected: false,
+      candidateSelected2:false
     }
   }
 
@@ -32,35 +33,37 @@ class DemoListUI extends React.Component {
       candidateSelected: !this.state.candidateSelected
     });
   }
+  onSelectCandidatesClick2() {
+    this.setState({
+      candidateSelected2: !this.state.candidateSelected2
+    });
+  }
 
   render() {
     const host = {
       Top: `${'0vh'}`,
     };
     return (
+      <React.Fragment>
       <div id="Area1" style={{ marginTop: `${host.Top}` }} className="GroupArea" >
         <div id="Practice Example" className="list-group">
-          <input id="toggle2" className="btn-toggle" type="checkbox" checked={this.state.candidateSelected} onChange={e => { this.onSelectCandidatesClick() }} />
-          <label className="toggleBtn" htmlFor="toggle2">Practice Example</label>
+          <input id="toggle1" className="btn-toggle" type="checkbox" checked={this.state.candidateSelected} 
+          onChange={e => { this.onSelectCandidatesClick() }} />
+          <label className="toggleBtn" htmlFor="toggle1">Practice Example</label>
           <ul>
             {/* <li><Link to={`/NativeHTML:222`} state={{ from: "props-v-state" }}>NativeHTML</Link></li> */}
             {/* <li><Link to="/DemoListUI">DemoListUI</Link></li> */}
-
             <li key="1"><Link to="/NativeHTML/GeneratorSlopeEquation">GeneratorSlopeEquation</Link></li>
             <li key="2"><Link to="/NativeHTML/Canvas Fireball Follow Exercise">Canvas Fireball Follow Exercise</Link></li>
             <li key="5"><Link to="/OptionsMap">OptionsMap</Link></li>
             <li key="6"><Link to="/CSSTutorial">CSSTutorial</Link></li>
             <li key="7"><Link to="/ProgressDIYUse">ProgressDIYUse</Link></li>
-            <li key="3"><Link to="/TestHooks">useHooks</Link></li>
-            <li key="8"><Link to="/UseState">useState</Link></li>
-            <li key="9"><Link to="/TestUseCallback" >useCallback</Link></li>
-            <li key="10"><Link to="/TraversingAndRendering">TraversingAndRendering</Link></li>
-            <li key="11"><Link to="/RpgGame">RPG_Game</Link></li>
+            <li ><Link to="/TraversingAndRendering">TraversingAndRendering</Link></li>
+            <li ><Link to="/RpgGame">RPG_Game</Link></li>
             <li ><Link to="/UseOtherComponents">UseOtherComponents</Link></li>
             <li ><Link to="/TutorialTemplate">TutorialTemplate</Link></li>
             <li ><Link to="/ReactFragment">ReactFragment</Link></li>
             {/* <li ><Link to="/FetchOpenAI">FetchOpenAI</Link></li> */}
-            <li ><Link to="/UseContext">UseContext</Link></li>
             <li ><Link to="/PalindromeNumber">PalindromeNumber</Link></li>
             <li ><Link to="/RomanToInteger">RomanToInteger</Link></li>
             <li ><Link to="/LongestCommonPrefix">LongestCommonPrefix</Link></li>
@@ -73,7 +76,21 @@ class DemoListUI extends React.Component {
             <li ><Link to="/LengthOfLongestSubstring">LengthOfLongestSubstring</Link></li>
           </ul>
         </div>
+        <div id="ReactBasics" className="list-group">
+          <input id="toggle3" className="btn-toggle" type="checkbox" checked={this.state.candidateSelected2} 
+          onChange={()=> this.onSelectCandidatesClick2()}
+          />
+          <label className="toggleBtn" htmlFor="toggle3">React-Basics</label>
+          <ul>
+            <li><Link to="/HookEffect">useEffect</Link></li>
+            <li><Link to="/UseState">useState</Link></li>
+            <li><Link to="/HookContext">useContext</Link></li>
+            <li ><Link to="/TestUseCallback" >useCallback</Link></li>
+          </ul>
+        </div>
       </div>
+      </React.Fragment>
+      
     );
   }
 }

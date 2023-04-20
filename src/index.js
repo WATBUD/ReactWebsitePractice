@@ -8,7 +8,7 @@ import CSSTutorial from './Tutorial/CSSTutorial';
 import ProgressDIYUse from './Tutorial/ProgressDIYUse';
 import UseState from './Tutorial/UseState';
 import TestUseCallback from './Tutorial/TestUseCallback';
-import TestHooks from './Tutorial/TestHooks';
+import HookEffect from './hook/hookEffect';
 import UseOtherComponents from './Tutorial/UseOtherComponents';
 
 import RpgGame from './RPG/RPG_Game';
@@ -16,7 +16,11 @@ import TutorialTemplate from './Tutorial/TutorialTemplate';
 import FetchOpenAI from './Tutorial/FetchOpenAI';
 import TraversingAndRendering from './Tutorial/TraversingAndRendering';
 import ReactFragment from './Tutorial/ReactFragment';
-import UseContext from './Tutorial/UseContext';
+import HookContext from './hook/hookContext';
+//import ChildComponent from './hook/ChildComponent';
+
+
+
 import PalindromeNumber from './Tutorial/PalindromeNumber';
 import RomanToInteger from './Tutorial/RomanToInteger';
 import LongestCommonPrefix from './Tutorial/LongestCommonPrefix';
@@ -65,14 +69,14 @@ ReactDOM.render(
       <Route path="/ProgressDIYUse" element={<ProgressDIYUse />}></Route>
       <Route path="/UseState" element={<UseState />}></Route>
       <Route path="/TestUseCallback" element={<TestUseCallback />}></Route>
-      <Route path="/TestHooks" element={<TestHooks />}></Route>
+      <Route path="/HookEffect" element={<HookEffect />}></Route>
       <Route path="/TraversingAndRendering" element={<TraversingAndRendering />}></Route>
       <Route path="/RpgGame" element={<RpgGame />}></Route>
       <Route path="/UseOtherComponents" element={<UseOtherComponents />}></Route>
       <Route path="/TutorialTemplate" element={<TutorialTemplate />}></Route>
       <Route path="/ReactFragment" element={<ReactFragment />}></Route>
       <Route path="/FetchOpenAI" element={<FetchOpenAI />}></Route>
-      <Route path="/UseContext" element={<UseContext />}></Route>
+      <Route path="/HookContext" element={<HookContext />}></Route>
       <Route path="/PalindromeNumber" element={<PalindromeNumber />}></Route>
       <Route path="/RomanToInteger" element={<RomanToInteger />}></Route>
       <Route path="/LongestCommonPrefix" element={<LongestCommonPrefix />}></Route>
