@@ -1,0 +1,40 @@
+.slideout {
+  position: absolute;
+  overflow: hidden;
+  width: auto;
+  background: red;
+  height: 50%;
+  right: 0px;
+  display: flex;
+  }
+  
+  .toggle-btn {
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .content {
+    /* position: absolute; */
+    top: 0;
+    width: 0px;
+    height: 100%;
+    background-color: #f1f1f1;
+    /* padding: 10px; */
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .slideout.open .content {
+    width: 250px;
+  }
+  
+  /* .slideout.open .toggle-btn {
+    width: 0;  
+  }
+   */

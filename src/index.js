@@ -3,22 +3,23 @@ import ReactDOM from 'react-dom';
 import DemoListUI from './DemoListUI/DemoListUI';
 import EntryPage from './EntryPage';
 import './index.css';
-import OptionsMap from './Tutorial/OptionsMap';
 import CSSTutorial from './Tutorial/CSSTutorial';
 import ProgressDIYUse from './Tutorial/ProgressDIYUse';
-import UseState from './Tutorial/UseState';
-import TestUseCallback from './Tutorial/TestUseCallback';
-import HookEffect from './hook/hookEffect';
-import UseOtherComponents from './Tutorial/UseOtherComponents';
-
 import RpgGame from './RPG/RPG_Game';
 import TutorialTemplate from './Tutorial/TutorialTemplate';
 import FetchOpenAI from './Tutorial/FetchOpenAI';
 import TraversingAndRendering from './Tutorial/TraversingAndRendering';
 import ReactFragment from './Tutorial/ReactFragment';
-import HookContext from './hook/hookContext';
-//import ChildComponent from './hook/ChildComponent';
+import UseOtherComponents from './Tutorial/UseOtherComponents';
+//************** Components **************
+import OptionsMap from './Component/OptionsMap';
 
+
+//************** hook **************
+import HookContext from './hook/hookContext';
+import UseState from './hook/hookState';
+import HookCallback from './hook/hookCallback';
+import HookEffect from './hook/hookEffect';
 
 
 import PalindromeNumber from './Tutorial/PalindromeNumber';
@@ -31,6 +32,7 @@ import FindSumOfFirstNNaturalNumbers from './Tutorial/FindSumOfFirst_N_Natural_N
 import MergeArraysAndSortSlice from './Tutorial/MergeArraysAndSortSlice';
 import FindFirstSingleNumber from './Tutorial/FindFirstSingleNumber';
 import LengthOfLongestSubstring from './Tutorial/LengthOfLongestSubstring';
+// import SlideOut from './UIDemo/SlideOut';
 
 
 
@@ -68,7 +70,7 @@ ReactDOM.render(
       <Route path="/CSSTutorial" element={<CSSTutorial />}></Route>
       <Route path="/ProgressDIYUse" element={<ProgressDIYUse />}></Route>
       <Route path="/UseState" element={<UseState />}></Route>
-      <Route path="/TestUseCallback" element={<TestUseCallback />}></Route>
+      <Route path="/HookCallback" element={<HookCallback />}></Route>
       <Route path="/HookEffect" element={<HookEffect />}></Route>
       <Route path="/TraversingAndRendering" element={<TraversingAndRendering />}></Route>
       <Route path="/RpgGame" element={<RpgGame />}></Route>
@@ -87,8 +89,8 @@ ReactDOM.render(
       <Route path="/MergeArraysAndSortSlice" element={<MergeArraysAndSortSlice />}></Route>
       <Route path="/FindFirstSingleNumber" element={<FindFirstSingleNumber />}></Route>
       <Route path="/LengthOfLongestSubstring" element={<LengthOfLongestSubstring />}></Route>
+      {/* <Route path="/SlideOut" element={<SlideOut />}></Route> */}
 
-      
       {/* <Route path=":teasmId" element={<NativeHTML />} /> */}
 
     </Routes>

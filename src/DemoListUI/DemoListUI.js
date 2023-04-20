@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './DemoListUI.css';
+import SlideOut from 'UIDemo/SlideOut';
 // function DemoListUI() {
 //   return (
 //     <div id="Area1" class="GroupArea" >
@@ -24,8 +25,10 @@ class DemoListUI extends React.Component {
 
     this.state = {
       candidateSelected: false,
-      candidateSelected2:false
+      candidateSelected2:false,
+      rootBackgroundColor:false
     }
+    // this.setRootBackgroundColor=this.setRootBackgroundColor.bind(this);
   }
 
   onSelectCandidatesClick() {
@@ -38,6 +41,14 @@ class DemoListUI extends React.Component {
       candidateSelected2: !this.state.candidateSelected2
     });
   }
+  setRootBackgroundColor(color) {
+    console.log('%c setRootBackgroundColor', 'background: white; color: red',color);
+    this.setState({
+      rootBackgroundColor: !this.state.rootBackgroundColor
+    });
+
+    document.getElementById('root').style.backgroundColor=color;
+  }
 
   render() {
     const host = {
@@ -45,10 +56,11 @@ class DemoListUI extends React.Component {
     };
     return (
       <React.Fragment>
-      <div id="Area1" style={{ marginTop: `${host.Top}` }} className="GroupArea" >
+      <div id="Area1" style={{ marginTop: `${host.Top}`,display:'flex' }} className="GroupArea" >
         <div id="Practice Example" className="list-group">
           <input id="toggle1" className="btn-toggle" type="checkbox" checked={this.state.candidateSelected} 
-          onChange={e => { this.onSelectCandidatesClick() }} />
+          onChange={e => { this.onSelectCandidatesClick() }} 
+          />
           <label className="toggleBtn" htmlFor="toggle1">Practice Example</label>
           <ul>
             {/* <li><Link to={`/NativeHTML:222`} state={{ from: "props-v-state" }}>NativeHTML</Link></li> */}
@@ -60,7 +72,6 @@ class DemoListUI extends React.Component {
             <li key="7"><Link to="/ProgressDIYUse">ProgressDIYUse</Link></li>
             <li ><Link to="/TraversingAndRendering">TraversingAndRendering</Link></li>
             <li ><Link to="/RpgGame">RPG_Game</Link></li>
-            <li ><Link to="/UseOtherComponents">UseOtherComponents</Link></li>
             <li ><Link to="/TutorialTemplate">TutorialTemplate</Link></li>
             <li ><Link to="/ReactFragment">ReactFragment</Link></li>
             {/* <li ><Link to="/FetchOpenAI">FetchOpenAI</Link></li> */}
@@ -78,19 +89,23 @@ class DemoListUI extends React.Component {
         </div>
         <div id="ReactBasics" className="list-group">
           <input id="toggle3" className="btn-toggle" type="checkbox" checked={this.state.candidateSelected2} 
-          onChange={()=> this.onSelectCandidatesClick2()}
+          onChange={()=> this.onSelectCandidatesClick2() }
           />
           <label className="toggleBtn" htmlFor="toggle3">React-Basics</label>
           <ul>
             <li><Link to="/HookEffect">useEffect</Link></li>
             <li><Link to="/UseState">useState</Link></li>
             <li><Link to="/HookContext">useContext</Link></li>
-            <li ><Link to="/TestUseCallback" >useCallback</Link></li>
+            <li ><Link to="/HookCallback" >useCallback</Link></li>
+            <li ><Link to="/UseOtherComponents">UseOtherComponents</Link></li>
           </ul>
         </div>
       </div>
+      <SlideOut setBackgroundColor={this.setRootBackgroundColor.bind(this)}/>
+
       </React.Fragment>
       
+
     );
   }
 }
