@@ -85,6 +85,7 @@ class DemoListUI extends React.Component {
             <li ><Link to="/MergeArraysAndSortSlice">MergeArraysAndSortSlice</Link></li>
             <li ><Link to="/FindFirstSingleNumber">FindFirstSingleNumber</Link></li>
             <li ><Link to="/LengthOfLongestSubstring">LengthOfLongestSubstring</Link></li>
+            <li ><Link to="/ReverseInteger">ReverseInteger</Link></li>
           </ul>
         </div>
         <div id="ReactBasics" className="list-group">
