@@ -13,7 +13,7 @@ import ReactFragment from './Tutorial/ReactFragment';
 import UseOtherComponents from './Tutorial/UseOtherComponents';
 //************** Components **************
 import OptionsMap from './Component/OptionsMap';
-
+import SwitchTransition from './UIDemo/SwitchTransition';
 
 //************** hook **************
 import HookContext from './hook/hookContext';
@@ -89,6 +89,10 @@ ReactDOM.render(
       <Route path="/MergeArraysAndSortSlice" element={<MergeArraysAndSortSlice />}></Route>
       <Route path="/FindFirstSingleNumber" element={<FindFirstSingleNumber />}></Route>
       <Route path="/LengthOfLongestSubstring" element={<LengthOfLongestSubstring />}></Route>
+
+      <Route path="/SwitchTransition" element={<SwitchTransition />}></Route>
+
+
       {/* <Route path="/SlideOut" element={<SlideOut />}></Route> */}
 
       {/* <Route path=":teasmId" element={<NativeHTML />} /> */}

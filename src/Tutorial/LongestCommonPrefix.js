@@ -24,7 +24,7 @@ function longestCommonPrefix(strs) {
 
 
 
-function customName() {
+function LongestCommonPrefix() {
   return (
     <div>
       <p>longestCommonPrefix:["flower","flow","flight"] {longestCommonPrefix(["so","bison"])}</p>
@@ -32,5 +32,5 @@ function customName() {
     
   );
 }
-export default customName;
+export default LongestCommonPrefix;
 

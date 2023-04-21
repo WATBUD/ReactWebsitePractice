@@ -4,8 +4,6 @@ import React, { useState,useEffect,useReducer,Component } from 'react';
 import "./RPG_Game.css";
 import * as RPG_GameMapConfig from './RPG_GameMapConfig.js';
 import * as RPG_GameModule from './RPG_GameModule.js';
-import BackpackPage from './BackpackPage';
-import Inventory from './Inventory';
 
 class CustomName extends Component {
   //var CentralManager=_CentralManager;
@@ -20,6 +18,14 @@ class CustomName extends Component {
     };
 
   }
+  // test=()=>{
+  //   console.log('%c this.CentralManager:', 'color: green', this);
+
+  //   this.CentralManager._BackpackBool = !this.CentralManager._BackpackBool;
+  // }
+  // handleClick = () => {
+  //   this.setState({ count: this.state.count + 1 });
+  // };
   componentDidMount(){//rendering completed
     //const { location } = this.props;
     console.log('%c this.props:', 'color: green', this.props);
@@ -86,10 +92,7 @@ class CustomName extends Component {
 
           {this.CentralManager._BackpackBool ? (
             <div className="FillAreaScreen" style={{ background: '#1eff007a' }}>
-              {/* <BackpackPage /> */}
-              <Inventory />
-              
-
+              BackpackBool
             </div>) : null}
           {this.CentralManager._AbilityTableBool ? (
             <div className="FillAreaScreen" style={{ background: '#000dffe0' }}>

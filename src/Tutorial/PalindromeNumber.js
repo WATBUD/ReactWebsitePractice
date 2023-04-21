@@ -22,10 +22,13 @@ var isPalindromeNum= function(num){
   let reversedNum = 0;//1
   // 反轉整數
   while (num > 0) {
+
     reversedNum = reversedNum * 10 + num % 10;
     console.log('%c reversedNum', 'background: blue; color: white',reversedNum);
+
     num = Math.floor(num / 10);//122
     console.log('%c Math.floor', 'background: blue; color: white',num);
+
   }
   // 比較反轉後的數字和原數字是否相同
   if (originalNum === reversedNum) {
@@ -36,7 +39,7 @@ var isPalindromeNum= function(num){
 }
 
 
-function customName() {
+function PalindromeNumber() {
 
   // isPalindromeString(5);
   // isPalindromeNum(5);
@@ -52,5 +55,5 @@ function customName() {
     
   );
 }
-export default customName;
+export default PalindromeNumber;
 

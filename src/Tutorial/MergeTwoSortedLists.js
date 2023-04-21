@@ -1,4 +1,4 @@
-import React ,{useEffect,useState,useMemo,useCallback }from 'react';
+import React from 'react';
 import { ListNodeUI,createListNode,mergeTwoListNode} from 'Component/RenderListNode';
 
 function MergeTwoSortedLists() {

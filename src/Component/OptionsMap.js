@@ -31,7 +31,7 @@ function OptionsMap(props) {
   return (
     <div id="App" style={{ top: '50px', position: 'absolute' }}>
       <div className="select-container">
-        <select   onChange={(event)=>props.setRootBGcolor(event.target.value)}>
+        <select onChange={(event)=>props.setRootBGcolor(event.target.value)}>
           {options.map((option, index) => (
             <option
               key={index}

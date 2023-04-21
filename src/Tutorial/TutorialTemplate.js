@@ -1,48 +1,77 @@
-import { Alert } from "antd";
-import { useForm } from "antd/lib/form/Form";
 import React from "react";
-import { useEffect,useLayoutEffect  } from 'react';
-class ClassComponent extends React.Component {
-  componentDidMount(){
-    alert('Enter componentDidMount');
-  }
-  componentWillUnmount(){
-    alert('Enter componentWillUnmount');
-  }
+
+const optionsA = [
+  {
+    label: "Apple",
+    value: "apple",
+  },
+  {
+    label: "Mango",
+    value: "mango",
+  },
+  {
+    label: "Banana",
+    value: "banana",
+  },
+  {
+    label: "Pineapple",
+    value: "pineapple",
+  },
+];
+// const optionsB = [
+//   {
+//     label: "optionsBApple",
+//     value: "apple",
+//   },
+//   {
+//     label: "optionsBMango",
+//     value: "mango",
+//   },
+
+// ];
+
+// const optionsC = [
+//   {
+//     label: "optionsC",
+//     value: "apple",
+//   },
+//   {
+//     label: "optionsCMango",
+//     value: "mango",
+//   },
+
+// ];
+
+class OptionsMap extends React.Component {
   render() {
     return (
       <div id="App" style={{top:'50px',position: 'absolute'}}>
-             -------------ClassComponent-------------
+        -------------ParentComponent-------------
+
+        <div className="select-container">
+             <ArrayComponent DynamicOptions={
+              optionsA
+             }/>
+        </div>
       </div>
     );
   }
 }
-function FnComponent() {
-  useLayoutEffect(()=>{
-    alert('Enter useEffect DidMount');
-    // const asyncCleanup = async () => {
-    //   // 执行异步任务
-    //   //await someAsyncTask();
-    //   //alert('Enter useEffect DidMount');
-
-    //   alert('Async task completed');
-    // };
-    //asyncCleanup();
-    return ()=>{
-      alert('Enter useEffect WillUnmount');
-    }
-  },[])
 
 
 
+
+
+function ArrayComponent(props) {
+  console.log(props);
   return (
-    <div id="App" style={{top:'50px',position: 'absolute'}}>
-    -------------FnComponent-------------
-    </div>
-  );
+    <select>
+        -------------ArrayComponent-------------
+      {props.DynamicOptions.map((option, index) => (
+        <option key={index} value={option.value}>{option.label}</option>
+      ))}
+    </select>
+  )
 }
 
-
-
-
-export default FnComponent;
+export default OptionsMap;
