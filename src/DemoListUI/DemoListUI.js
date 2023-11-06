@@ -63,6 +63,8 @@ class DemoListUI extends React.Component {
           />
           <label className="toggleBtn" htmlFor="toggle1">Practice Example</label>
           <ul>
+          <li ><Link to="/IsDragging">IsDragging</Link></li>
+
             {/* <li><Link to={`/NativeHTML:222`} state={{ from: "props-v-state" }}>NativeHTML</Link></li> */}
             {/* <li><Link to="/DemoListUI">DemoListUI</Link></li> */}
             <li key="1"><Link to="/NativeHTML/GeneratorSlopeEquation">GeneratorSlopeEquation</Link></li>
@@ -85,6 +87,7 @@ class DemoListUI extends React.Component {
             <li ><Link to="/MergeArraysAndSortSlice">MergeArraysAndSortSlice</Link></li>
             <li ><Link to="/FindFirstSingleNumber">FindFirstSingleNumber</Link></li>
             <li ><Link to="/LengthOfLongestSubstring">LengthOfLongestSubstring</Link></li>
+            <li ><Link to="/ReverseInteger">ReverseInteger</Link></li>
           </ul>
         </div>
         <div id="ReactBasics" className="list-group">
@@ -96,10 +99,8 @@ class DemoListUI extends React.Component {
             <li><Link to="/HookEffect">useEffect</Link></li>
             <li><Link to="/UseState">useState</Link></li>
             <li><Link to="/HookContext">useContext</Link></li>
-            <li><Link to="/HookCallback" >useCallback</Link></li>
-            <li><Link to="/UseOtherComponents">UseOtherComponents</Link></li>
-            <li><Link to="/SwitchTransition">SwitchTransition</Link></li>
-
+            <li ><Link to="/HookCallback" >useCallback</Link></li>
+            <li ><Link to="/UseOtherComponents">UseOtherComponents</Link></li>
           </ul>
         </div>
       </div>
