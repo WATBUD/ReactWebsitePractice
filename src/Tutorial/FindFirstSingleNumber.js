@@ -75,28 +75,33 @@ function hashSingleNumber(nums) {
 }
 
 function customName() {
-  let array1 = [2, 3, 4, 2, 5, 6, 5];
-  let answer1 = array1.find(isSingleNumber);
+  let questuon1 = [2, 3, 4, 2, 5, 6, 5];
+  let answer1 = questuon1.find(isSingleNumber);
 
-  let array2 = [5, 2, 7,9,1];
-  let answer2= findFirstSingleNumber(array2);
+  let questuon2 = [5, 2, 7,9,1];
+  let answer2= findFirstSingleNumber(questuon2);
 
-  let array3 = [4,1,2,1,2];
-  let answer3= hashSingleNumber(array3);
+  let Questuon3 = [4,1,2,1,2];
 
-  let answer4= XOR_SingleNumber([4,1,2,1,2]);
+
+  let answer3= hashSingleNumber(Questuon3);
+  let answer4= XOR_SingleNumber(Questuon3);
+
+
+  let answerSingleNumberNewSet= singleNumberNewSet(Questuon3);
+
 //   console.log(firstSingleNumber); // 3
 //   console.log('%c singleNumber', 'background: blue; color: white',singleNumber([4,1,2,1,2]));
 // let num2 = 3;
 // console.log('%c binary3', 'background: blue; color: white',num2.toString(2).padStart(4, '0'));
   return (
     <div>
-      <p>findFirstSingleNumber:{JSON.stringify(array1)}= {answer1}</p>
-      <p>findFirstSingleNumber:{JSON.stringify(array2)}= {answer2}</p>
-      <p>hashSingleNumber:{JSON.stringify(array3)}= {answer3}</p>
-      <p>XOR_SingleNumber:{JSON.stringify(array3)}= {answer4}</p>
-      <p>XOR_binary:{JSON.stringify(arrayToBinary(array3))}= {answer4}</p>
-      <p>singleNumberNewSet:{JSON.stringify(singleNumberNewSet(array3))}= {answer4}</p>
+      <p>findFirstSingleNumber:{JSON.stringify(questuon1)}= {answer1}</p>
+      <p>findFirstSingleNumber:{JSON.stringify(questuon2)}= {answer2}</p>
+      <p>hashSingleNumber:{JSON.stringify(Questuon3)}= {answer3}</p>
+      <p>XOR_SingleNumber:{JSON.stringify(Questuon3)}= {answer4}</p>
+      <p>XOR_binary:{JSON.stringify(arrayToBinary(Questuon3))}= {answer4}</p>
+      <p>singleNumberNewSet:{JSON.stringify(Questuon3)}= {answerSingleNumberNewSet}</p>
     </div>
     
   );
