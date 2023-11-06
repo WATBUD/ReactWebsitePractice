@@ -16,9 +16,9 @@ function InterviewQuestionsKXIT() {
   //Question 3
   let array1 = [2, 3, 4, 2, 5, 6, 5];
   let answer1 = array1.find(isSingleNumber);
-  https://leetcode.com/problems/single-number/
+  //https://leetcode.com/problems/single-number/
   //Question 4
-  https://leetcode.com/problems/longest-substring-without-repeating-characters/
+ //https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
 }
 

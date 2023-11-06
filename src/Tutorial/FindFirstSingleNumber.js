@@ -92,7 +92,7 @@ function customName() {
   return (
     <div>
       <p>findFirstSingleNumber:{JSON.stringify(array1)}= {answer1}</p>
-      <p>findFirstSingleNumber:{JSON.stringify(array2)}= {answer2}</p>！
+      <p>findFirstSingleNumber:{JSON.stringify(array2)}= {answer2}</p>
       <p>hashSingleNumber:{JSON.stringify(array3)}= {answer3}</p>
       <p>XOR_SingleNumber:{JSON.stringify(array3)}= {answer4}</p>
       <p>XOR_binary:{JSON.stringify(arrayToBinary(array3))}= {answer4}</p>
