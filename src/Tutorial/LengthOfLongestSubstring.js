@@ -1,6 +1,4 @@
 import React from 'react';
-
-
 function length_Of_Longest_Substring_For_Set(inputString) {
   let maxLength = 0;
   let left = 0;
@@ -53,15 +51,15 @@ function customName() {
   return (
     <div>
 
-      <p>"k"= {length_Of_Longest_Substring_For_Set("k")}</p>
+      {/* <p>"k"= {length_Of_Longest_Substring_For_Set("k")}</p>
       <p>"k"= {length_Of_Longest_Substring_For_Set_2("k")}</p>
+ */}
 
 
+      {/* <p>"pwwkew"= {length_Of_Longest_Substring_For_Set("pwwkew")}</p>
+      <p>"pwwk"= {length_Of_Longest_Substring_For_Set("pwwk")}</p> */}
 
-      <p>"pwwkew"= {length_Of_Longest_Substring_For_Set("pwwkew")}</p>
-      <p>"pwwk"= {length_Of_Longest_Substring_For_Set("pwwk")}</p>
-
-      <p>"pwwkew"= {length_Of_Longest_Substring_For_Set_2("pwwkew")}</p>
+      {/* <p>"pwwkew"= {length_Of_Longest_Substring_For_Set_2("pwwkew")}</p> */}
       <p>"pwwk"= {length_Of_Longest_Substring_For_Set_2("pwwk")}</p>
 
     </div>

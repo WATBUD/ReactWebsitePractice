@@ -26,6 +26,7 @@ import HookCallback from './hook/hookCallback';
 import HookEffect from './hook/hookEffect';
 
 
+
 import PalindromeNumber from './Tutorial/PalindromeNumber';
 import RomanToInteger from './Tutorial/RomanToInteger';
 import LongestCommonPrefix from './Tutorial/LongestCommonPrefix';
@@ -34,7 +35,9 @@ import MergeTwoSortedLists from './Tutorial/MergeTwoSortedLists';
 import MergeKSortedLists from './Tutorial/MergeKSortedLists';
 import FindSumOfFirstNNaturalNumbers from './Tutorial/FindSumOfFirst_N_Natural_Numbers';
 import MergeArraysAndSortSlice from './Tutorial/MergeArraysAndSortSlice';
+import SetTimeoutInsideAForLoopInJavaScript from './Tutorial/SetTimeoutInsideAForLoopInJavaScript';
 import FindFirstSingleNumber from './Tutorial/FindFirstSingleNumber';
+
 import LengthOfLongestSubstring from './Tutorial/LengthOfLongestSubstring';
 // import SlideOut from './UIDemo/SlideOut';
 
@@ -43,6 +46,7 @@ import LengthOfLongestSubstring from './Tutorial/LengthOfLongestSubstring';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NativeHTML from './native/NativeHTML';
 import reportWebVitals from './reportWebVitals';
+// const { LengthOfLongestSubstring } = require('./Tutorial//QuestionBankDirectory');
 
 
 
@@ -94,6 +98,8 @@ ReactDOM.render(
 
       <Route path="/FindSumOfFirst_N_Natural_Numbers" element={<FindSumOfFirstNNaturalNumbers />}></Route>
       <Route path="/MergeArraysAndSortSlice" element={<MergeArraysAndSortSlice />}></Route>
+      <Route path="/SetTimeoutInsideAForLoopInJavaScript" element={<SetTimeoutInsideAForLoopInJavaScript/>}></Route>
+
       <Route path="/FindFirstSingleNumber" element={<FindFirstSingleNumber />}></Route>
       <Route path="/LengthOfLongestSubstring" element={<LengthOfLongestSubstring />}></Route>
       {/* <Route path="/SlideOut" element={<SlideOut />}></Route> */}
