@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 function length_Of_Longest_Substring_For_Set(inputString) {
   let maxLength = 0;

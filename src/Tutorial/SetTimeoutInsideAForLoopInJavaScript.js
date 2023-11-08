@@ -1,3 +1,4 @@
+/* eslint-disable no-loop-func */
 import React from 'react';
 function SetTimeoutInsideAForLoopInJavaScript(type='') {
   switch (type) {
@@ -28,15 +29,17 @@ function SetTimeoutInsideAForLoopInJavaScript(type='') {
       }
       break;
     case "IIFE":
-      //immediately-invoked function expression opuput 5 -> 5,5,5,5,5
-      for (var i = 0; i < 5; i++) {
+      //immediately-invoked function expression
+      for (var i_iife = 0; i_iife < 5; i_iife++) {
         ((j) => {
           setTimeout(() => {
             console.log(j);
           }, 1000);
-        })(i);
+        })(i_iife);
       }
-      console.log(i);
+      console.log('%c Enter IIFE', 
+      'background-image: url(https://pic.pimg.tw/elizabeth15angel/1437747627-1122098840.jpg); background-size: 100% 100%;color:yellow;font-size: 40px;'
+      ,'i_iife',i_iife);
       break;
     case "Promise":
       const task = [];
@@ -48,14 +51,14 @@ function SetTimeoutInsideAForLoopInJavaScript(type='') {
           }, 1000 * i);
         });
 
-      for (var i = 0; i < 5; i++) {
-        task.push(output(i));
+      for (var i_Promise = 0; i_Promise < 5; i_Promise++) {
+        task.push(output(i_Promise));
       }
 
       // 4.异步操作执行完成后输出最后的i
       Promise.all(task).then(() => {
         setTimeout(() => {
-          console.log(i);
+          console.log(i_Promise);
         }, 1000);
       });
       break;
@@ -85,7 +88,7 @@ function SetTimeoutInsideAForLoopInJavaScript(type='') {
 
 
 function customName() {
-  let type="IIFE";
+  let type="var";
   let questionText = `1. for (var i = 0; i < 5; i++) {
     setTimeout(() => { 
         console.log(i); 
