@@ -89,6 +89,7 @@ class DemoListUI extends React.Component {
             <li ><Link to="/LengthOfLongestSubstring">LengthOfLongestSubstring</Link></li>
             <li ><Link to="/ReverseInteger">ReverseInteger</Link></li>
             <li ><Link to="/SetTimeoutInsideAForLoopInJavaScript">SetTimeoutInsideAForLoopInJavaScript</Link></li>
+            <li ><Link to="/ValidPalindrome125">ValidPalindrome125</Link></li>
           </ul>
         </div>
         <div id="ReactBasics" className="list-group">
