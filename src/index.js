@@ -36,6 +36,7 @@ import MergeKSortedLists from './Tutorial/MergeKSortedLists';
 import FindSumOfFirstNNaturalNumbers from './Tutorial/FindSumOfFirst_N_Natural_Numbers';
 import MergeArraysAndSortSlice from './Tutorial/MergeArraysAndSortSlice';
 import SetTimeoutInsideAForLoopInJavaScript from './Tutorial/SetTimeoutInsideAForLoopInJavaScript';
+import AssignASpecificNumberOfUniqueNumbers from './Tutorial/AssignASpecificNumberOfUniqueNumbers';
 import ValidPalindrome125 from './Tutorial/ValidPalindrome125';
 import FindFirstSingleNumber from './Tutorial/FindFirstSingleNumber';
 
@@ -100,9 +101,10 @@ ReactDOM.render(
       <Route path="/FindSumOfFirst_N_Natural_Numbers" element={<FindSumOfFirstNNaturalNumbers />}></Route>
       <Route path="/MergeArraysAndSortSlice" element={<MergeArraysAndSortSlice />}></Route>
       <Route path="/SetTimeoutInsideAForLoopInJavaScript" element={<SetTimeoutInsideAForLoopInJavaScript/>}></Route>
-      <Route path="/ValidPalindrome125" element={<ValidPalindrome125/>}></Route>
       <Route path="/FindFirstSingleNumber" element={<FindFirstSingleNumber />}></Route>
       <Route path="/LengthOfLongestSubstring" element={<LengthOfLongestSubstring />}></Route>
+      <Route path="/AssignASpecificNumberOfUniqueNumbers" element={<AssignASpecificNumberOfUniqueNumbers/>}></Route>
+      <Route path="/ValidPalindrome125" element={<ValidPalindrome125/>}></Route>
       {/* <Route path="/SlideOut" element={<SlideOut />}></Route> */}
 
       {/* <Route path=":teasmId" element={<NativeHTML />} /> */}

@@ -34,9 +34,7 @@ const UserProfile = () => {
 const UserForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-
   const { updateUser } = useContext(UserContext);
-
   const handleSubmit = (event) => {
     event.preventDefault();
     updateUser(name, email);
