@@ -25,6 +25,7 @@
 
 .list-group {
     /* display: inline-block; */
+    margin-left:40px;
     margin-top: 20px;
     background: rgb(34 131 177 / 0%);
 }
@@ -60,13 +61,13 @@
     background: rgb(137 113 145 / 86%);
     color: rgb(255 255 255);
     border-radius: 8px;
-    width: 200px;
+    /* width: 200px; */
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     user-select: none;
-    transition: all 4s linear;
+    transition: all 1s linear;
 }
 .btn-toggle + .toggleBtn::after{
     display: block;
