@@ -39,11 +39,11 @@ class DemoListUI extends React.Component {
 
   ];
   ReactBasicsLinks = [
-    { text: "useEffect" },
-    { text: "useState" },
-    { text: "useContext" },
-    { text: "useCallback" },
-    { text: "UseOtherComponents" }
+    { to:"/HookEffect", text: "useEffect" },
+    { to:"/HookUseState", text: "useState" },
+    { to:"/HookContext", text: "useContext" },
+    { to:"/HookCallback", text: "useCallback" },
+    { to:"/UseOtherComponents",text: "useOtherComponents" }
   ];
   technical_training = [
     { text: "LengthOfLongestSubstring3" },

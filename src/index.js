@@ -3,16 +3,6 @@ import ReactDOM from 'react-dom';
 import DemoListUI from './DemoListUI/DemoListUI';
 import EntryPage from './EntryPage';
 import './index.css';
-import CSSTutorial from './Tutorial/CSSTutorial';
-import ProgressDIYUse from './Tutorial/ProgressDIYUse';
-import RpgGame from './RPG/RPG_Game';
-import TutorialTemplate from './Tutorial/TutorialTemplate';
-import FetchOpenAI from './Tutorial/FetchOpenAI';
-import TraversingAndRendering from './Tutorial/TraversingAndRendering';
-import ReactFragment from './Tutorial/ReactFragment';
-import UseOtherComponents from './Tutorial/UseOtherComponents';
-import IsDragging from './Tutorial/IsDragging';
-
 //************** Components **************
 import OptionsMap from './Component/OptionsMap';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -20,17 +10,26 @@ import NativeHTML from './native/NativeHTML';
 import reportWebVitals from './reportWebVitals';
 // const { test } = require('./Tutorial//QuestionBankDirectory');
 // const root = ReactDOM.createRoot(document.getElementById('root'));
-//************** hook **************
-import HookContext from './hook/hookContext';
-import UseState from './hook/hookState';
-import HookCallback from './hook/hookCallback';
-import HookEffect from './hook/hookEffect';
+//************** PracticeExample **************
 import FindSumOfFirstNNaturalNumbers from './Tutorial/FindSumOfFirst_N_Natural_Numbers';
 import MergeArraysAndSortSlice from './Tutorial/MergeArraysAndSortSlice';
 import SetTimeoutInsideAForLoopInJavaScript from './Tutorial/SetTimeoutInsideAForLoopInJavaScript';
 import AssignASpecificNumberOfUniqueNumbers from './Tutorial/AssignASpecificNumberOfUniqueNumbers';
+import CSSTutorial from './Tutorial/CSSTutorial';
+import ProgressDIYUse from './Tutorial/ProgressDIYUse';
+import TraversingAndRendering from './Tutorial/TraversingAndRendering';
+import RpgGame from './RPG/RPG_Game';
+import TutorialTemplate from './Tutorial/TutorialTemplate';
+import FetchOpenAI from './Tutorial/FetchOpenAI';
+import IsDragging from './Tutorial/IsDragging';
+//************** ReactBasics **************
+import UseOtherComponents from './Tutorial/UseOtherComponents';
+import HookContext from './hook/hookContext';
+import HookUseState from './hook/hookState';
+import HookCallback from './hook/hookCallback';
+import HookEffect from './hook/hookEffect';
+import ReactFragment from './Tutorial/ReactFragment';
 // import SlideOut from './UIDemo/SlideOut';
-
 //************** leetcode **************
 import LengthOfLongestSubstring3 from './Tutorial/LengthOfLongestSubstring3';
 import ReverseInteger7 from './Tutorial/ReverseInteger7';
@@ -45,7 +44,28 @@ import FindFirstSingleNumber136 from './Tutorial/FindFirstSingleNumber136';
 import MoveZeroes283 from './Tutorial/MoveZeroes283';
 import FibonacciNumber509 from './Tutorial/FibonacciNumber509';
 
-const routes = [
+const ReactBasicsRoutes = [
+  { path: "/ReactFragment", component: ReactFragment },
+  { path: "/HookCallback", component: HookCallback },
+  { path: "/HookEffect", component: HookEffect },
+  { path: "/HookContext", component: HookContext },
+  { path: "/HookUseState", component: HookUseState },
+  { path: "/UseOtherComponents", component: UseOtherComponents },
+];
+const PracticeExampleRoutes = [
+  { path: "/RpgGame", component: RpgGame },
+  { path: "/TutorialTemplate", component: TutorialTemplate },
+  { path: "/TraversingAndRendering", component: TraversingAndRendering },
+  { path: "/FetchOpenAI", component: FetchOpenAI },
+  { path: "/IsDragging", component: IsDragging },
+  { path: "/MergeArraysAndSortSlice", component: MergeArraysAndSortSlice },
+  { path: "/OptionsMap", component: OptionsMap },
+  { path: "/CSSTutorial", component: CSSTutorial },
+  { path: "/ProgressDIYUse", component: ProgressDIYUse },  
+  { path: "/FindSumOfFirst_N_Natural_Numbers", component: FindSumOfFirstNNaturalNumbers },
+  { path: "/AssignASpecificNumberOfUniqueNumbers", component: AssignASpecificNumberOfUniqueNumbers }
+];
+const technicalTrainingRoutes = [
   { path: "/LengthOfLongestSubstring3", component: LengthOfLongestSubstring3 },
   { path: "/ReverseInteger7", component: ReverseInteger7 },
   { path: "/PalindromeNumber9", component: PalindromeNumber9 },
@@ -58,14 +78,8 @@ const routes = [
   { path: "/FindFirstSingleNumber136", component: FindFirstSingleNumber136 },
   { path: "/MoveZeroes283", component: MoveZeroes283 },
   { path: "/FibonacciNumber509", component: FibonacciNumber509 },
-  { path: "/MergeArraysAndSortSlice", component: MergeArraysAndSortSlice },
-  { path: "/OptionsMap", component: OptionsMap },
-  { path: "/CSSTutorial", component: CSSTutorial },
-  { path: "/ProgressDIYUse", component: ProgressDIYUse },
-  { path: "/UseOtherComponents", component: UseOtherComponents },
-  { path: "/FindSumOfFirst_N_Natural_Numbers", component: FindSumOfFirstNNaturalNumbers }
-
 ];
+
 
 // ========================================
 ReactDOM.render(
@@ -76,7 +90,6 @@ ReactDOM.render(
   // <HashRouter>
   //   <Route path="/native" component={native}/>
   // </HashRouter>,
-
   <BrowserRouter>
     {/* 
     <Test1 />
@@ -87,36 +100,32 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<DemoListUI />} />
       <Route path="*" element={<DemoListUI />} />
-      {routes.map((route) => (
+      {PracticeExampleRoutes.map((route) => (
         <Route
           key={route.path}
           path={route.path}
           element={React.createElement(route.component)}
         ></Route>
       ))}
-
+      {ReactBasicsRoutes.map((route) => (
+        <Route
+          key={route.path}
+          path={route.path}
+          element={React.createElement(route.component)}
+        ></Route>
+      ))}
+      {technicalTrainingRoutes.map((route) => (
+        <Route
+          key={route.path}
+          path={route.path}
+          element={React.createElement(route.component)}
+        ></Route>
+      ))}
       <Route path="/DemoListUI" element={<DemoListUI />}></Route>
       <Route path="/NativeHTML/:inputEmbedURL" element={<NativeHTML />}></Route>
-      <Route path="/UseState" element={<UseState />}></Route>
-      <Route path="/HookCallback" element={<HookCallback />}></Route>
-      <Route path="/HookEffect" element={<HookEffect />}></Route>
-      <Route
-        path="/TraversingAndRendering"
-        element={<TraversingAndRendering />}
-      ></Route>
-      <Route path="/RpgGame" element={<RpgGame />}></Route>
-      <Route path="/TutorialTemplate" element={<TutorialTemplate />}></Route>
-      <Route path="/ReactFragment" element={<ReactFragment />}></Route>
-      <Route path="/FetchOpenAI" element={<FetchOpenAI />}></Route>
-      <Route path="/HookContext" element={<HookContext />}></Route>
-      <Route path="/IsDragging" element={<IsDragging />}></Route>
       <Route
         path="/SetTimeoutInsideAForLoopInJavaScript"
         element={<SetTimeoutInsideAForLoopInJavaScript />}
-      ></Route>
-      <Route
-        path="/AssignASpecificNumberOfUniqueNumbers"
-        element={<AssignASpecificNumberOfUniqueNumbers />}
       ></Route>
       {/* <Route path="/SlideOut" element={<SlideOut />}></Route> */}
       {/* <Route path=":teasmId" element={<NativeHTML />} /> */}
