@@ -91,6 +91,7 @@ class DemoListUI extends React.Component {
             <li ><Link to="/SetTimeoutInsideAForLoopInJavaScript">SetTimeoutInsideAForLoopInJavaScript</Link></li>
             <li ><Link to="/AssignASpecificNumberOfUniqueNumbers">AssignASpecificNumberOfUniqueNumbers</Link></li>
             <li ><Link to="/ValidPalindrome125">ValidPalindrome125</Link></li>
+            <li ><Link to="/MoveZeroes283">MoveZeroes283</Link></li>
           </ul>
         </div>
         <div id="ReactBasics" className="list-group">

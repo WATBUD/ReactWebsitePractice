@@ -38,6 +38,8 @@ import MergeArraysAndSortSlice from './Tutorial/MergeArraysAndSortSlice';
 import SetTimeoutInsideAForLoopInJavaScript from './Tutorial/SetTimeoutInsideAForLoopInJavaScript';
 import AssignASpecificNumberOfUniqueNumbers from './Tutorial/AssignASpecificNumberOfUniqueNumbers';
 import ValidPalindrome125 from './Tutorial/ValidPalindrome125';
+import MoveZeroes283 from './Tutorial/MoveZeroes283';
+
 import FindFirstSingleNumber from './Tutorial/FindFirstSingleNumber';
 
 import LengthOfLongestSubstring from './Tutorial/LengthOfLongestSubstring';
@@ -105,6 +107,11 @@ ReactDOM.render(
       <Route path="/LengthOfLongestSubstring" element={<LengthOfLongestSubstring />}></Route>
       <Route path="/AssignASpecificNumberOfUniqueNumbers" element={<AssignASpecificNumberOfUniqueNumbers/>}></Route>
       <Route path="/ValidPalindrome125" element={<ValidPalindrome125/>}></Route>
+      <Route path="/MoveZeroes283" element={<MoveZeroes283/>}></Route>
+
+
+
+
       {/* <Route path="/SlideOut" element={<SlideOut />}></Route> */}
 
       {/* <Route path=":teasmId" element={<NativeHTML />} /> */}
