@@ -49,7 +49,7 @@ export const PracticeExampleRoutes = [
   { path: "/IsDragging", component: IsDragging, text: "IsDragging" },
   { path: "/OptionsMap", component: OptionsMap, text: "OptionsMap" },
   { path: "/CSSTutorial", component: CSSTutorial, text: "CSSTutorial" },
-  { path: "/FetchOpenAI", component: CSSTutorial, text: "FetchOpenAI" },
+  { path: "/FetchOpenAI", component: FetchOpenAI, text: "FetchOpenAI" },
   { path: "/ProgressDIYUse", component: ProgressDIYUse, text: "ProgressDIYUse" },
   { path: "/TraversingAndRendering", component: TraversingAndRendering, text: "TraversingAndRendering" },
   { path: "/TutorialTemplate", component: TutorialTemplate, text: "TutorialTemplate" },

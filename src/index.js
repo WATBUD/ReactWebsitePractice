@@ -29,23 +29,23 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<DemoListUI />} />
       <Route path="*" element={<DemoListUI />} />
-      {PracticeExampleRoutes.map((route) => (
+      {PracticeExampleRoutes.map((route,index) => (
         <Route
-          key={route.path}
+          key={index}
           path={route.path}
           element={React.createElement(route.component)}
         ></Route>
       ))}
-      {ReactBasicsRoutes.map((route) => (
+      {ReactBasicsRoutes.map((route,index) => (
         <Route
-          key={route.path}
+          key={index}
           path={route.path}
           element={React.createElement(route.component)}
         ></Route>
       ))}
-      {technicalTrainingRoutes.map((route) => (
+      {technicalTrainingRoutes.map((route,index) => (
         <Route
-          key={route.path}
+          key={index}
           path={route.path}
           element={React.createElement(route.component)}
         ></Route>

@@ -98,7 +98,7 @@ class DemoListUI extends React.Component {
             <ul>
             {ReactBasicsRoutes.map((link,index) => (
                 <li key={index}>
-                  <Link to={link.to?link.to:'/'+link.text}>{link.text}</Link>
+                  <Link to={link.to?link.to:link.path}>{link.text}</Link>
                 </li>
               ))}
             </ul>
