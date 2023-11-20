@@ -31,15 +31,9 @@ class DemoListUI extends React.Component {
     { to:"/RpgGame",text: "RPG_Game" },
     { text: "TutorialTemplate" },
     { text: "ReactFragment" },
-    { text: "LongestCommonPrefix" },
-    { text: "ValidParentheses" },
-    { text: "MergeTwoSortedLists" },
-    { text: "MergeKSortedLists" },
+    { text: "MergeKSortedLists23" },
     { text: "FindSumOfFirst_N_Natural_Numbers" },
     { text: "MergeArraysAndSortSlice" },
-    { text: "FindFirstSingleNumber" },
-    { text: "LengthOfLongestSubstring" },
-    { text: "ReverseInteger" },
     { text: "SetTimeoutInsideAForLoopInJavaScript" },
     { text: "AssignASpecificNumberOfUniqueNumbers" },
 
@@ -52,11 +46,19 @@ class DemoListUI extends React.Component {
     { text: "UseOtherComponents" }
   ];
   technical_training = [
-    { text: "RomanToInteger13" },
-    { text: "ValidPalindrome125" },
-    { text: "FibonacciNumber509" },
-    { text: "MoveZeroes283" },
+    { text: "LengthOfLongestSubstring3" },
+    { text: "ReverseInteger7" },
     { text: "PalindromeNumber9" },
+    { text: "RomanToInteger13" },
+    { text: "LongestCommonPrefix14" },
+    { text: "ValidParentheses20" },
+    { text: "MergeTwoSortedLists21" },
+    { text: "ValidPalindrome125" },
+    { text: "FindFirstSingleNumber136" },
+    { text: "MoveZeroes283" },
+    { text: "FibonacciNumber509" },
+
+
   ];
   constructor(props) {
     super(props);

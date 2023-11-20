@@ -13,53 +13,58 @@ import ReactFragment from './Tutorial/ReactFragment';
 import UseOtherComponents from './Tutorial/UseOtherComponents';
 import IsDragging from './Tutorial/IsDragging';
 
-
-
 //************** Components **************
 import OptionsMap from './Component/OptionsMap';
-
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NativeHTML from './native/NativeHTML';
+import reportWebVitals from './reportWebVitals';
+// const { test } = require('./Tutorial//QuestionBankDirectory');
+// const root = ReactDOM.createRoot(document.getElementById('root'));
 //************** hook **************
 import HookContext from './hook/hookContext';
 import UseState from './hook/hookState';
 import HookCallback from './hook/hookCallback';
 import HookEffect from './hook/hookEffect';
-
-
-
-import PalindromeNumber9 from './Tutorial/PalindromeNumber9';
-import RomanToInteger13 from './Tutorial/RomanToInteger13';
-import LongestCommonPrefix from './Tutorial/LongestCommonPrefix';
-import ValidParentheses from './Tutorial/ValidParentheses';
-import MergeTwoSortedLists from './Tutorial/MergeTwoSortedLists';
-import MergeKSortedLists from './Tutorial/MergeKSortedLists';
 import FindSumOfFirstNNaturalNumbers from './Tutorial/FindSumOfFirst_N_Natural_Numbers';
 import MergeArraysAndSortSlice from './Tutorial/MergeArraysAndSortSlice';
 import SetTimeoutInsideAForLoopInJavaScript from './Tutorial/SetTimeoutInsideAForLoopInJavaScript';
 import AssignASpecificNumberOfUniqueNumbers from './Tutorial/AssignASpecificNumberOfUniqueNumbers';
-import ValidPalindrome125 from './Tutorial/ValidPalindrome125';
-import FibonacciNumber509 from './Tutorial/FibonacciNumber509';
-import MoveZeroes283 from './Tutorial/MoveZeroes283';
-
-import FindFirstSingleNumber from './Tutorial/FindFirstSingleNumber';
-
-import LengthOfLongestSubstring from './Tutorial/LengthOfLongestSubstring';
 // import SlideOut from './UIDemo/SlideOut';
 
+//************** leetcode **************
+import LengthOfLongestSubstring3 from './Tutorial/LengthOfLongestSubstring3';
+import ReverseInteger7 from './Tutorial/ReverseInteger7';
+import PalindromeNumber9 from './Tutorial/PalindromeNumber9';
+import RomanToInteger13 from './Tutorial/RomanToInteger13';
+import LongestCommonPrefix14 from './Tutorial/LongestCommonPrefix14';
+import ValidParentheses20 from './Tutorial/ValidParentheses20';
+import MergeTwoSortedLists21 from './Tutorial/MergeTwoSortedLists21';
+import MergeKSortedLists23 from './Tutorial/MergeKSortedLists23';
+import ValidPalindrome125 from './Tutorial/ValidPalindrome125';
+import FindFirstSingleNumber136 from './Tutorial/FindFirstSingleNumber136';
+import MoveZeroes283 from './Tutorial/MoveZeroes283';
+import FibonacciNumber509 from './Tutorial/FibonacciNumber509';
 
-
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import NativeHTML from './native/NativeHTML';
-import reportWebVitals from './reportWebVitals';
-// const { LengthOfLongestSubstring } = require('./Tutorial//QuestionBankDirectory');
-
-
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
 const routes = [
+  { path: "/LengthOfLongestSubstring3", component: LengthOfLongestSubstring3 },
+  { path: "/ReverseInteger7", component: ReverseInteger7 },
+  { path: "/PalindromeNumber9", component: PalindromeNumber9 },
+  { path: "/RomanToInteger13", component: RomanToInteger13 },
+  { path: "/LongestCommonPrefix14", component: LongestCommonPrefix14 },
+  { path: "/ValidParentheses20", component: ValidParentheses20 },
+  { path: "/MergeTwoSortedLists21", component: MergeTwoSortedLists21 },
+  { path: "/MergeKSortedLists23", component: MergeKSortedLists23 },
+  { path: "/ValidPalindrome125", component: ValidPalindrome125 },
+  { path: "/FindFirstSingleNumber136", component: FindFirstSingleNumber136 },
+  { path: "/MoveZeroes283", component: MoveZeroes283 },
+  { path: "/FibonacciNumber509", component: FibonacciNumber509 },
+  { path: "/MergeArraysAndSortSlice", component: MergeArraysAndSortSlice },
   { path: "/OptionsMap", component: OptionsMap },
   { path: "/CSSTutorial", component: CSSTutorial },
-  { path: "/ProgressDIYUse", component: ProgressDIYUse }
+  { path: "/ProgressDIYUse", component: ProgressDIYUse },
+  { path: "/UseOtherComponents", component: UseOtherComponents },
+  { path: "/FindSumOfFirst_N_Natural_Numbers", component: FindSumOfFirstNNaturalNumbers }
+
 ];
 
 // ========================================
@@ -92,7 +97,6 @@ ReactDOM.render(
 
       <Route path="/DemoListUI" element={<DemoListUI />}></Route>
       <Route path="/NativeHTML/:inputEmbedURL" element={<NativeHTML />}></Route>
-
       <Route path="/UseState" element={<UseState />}></Route>
       <Route path="/HookCallback" element={<HookCallback />}></Route>
       <Route path="/HookEffect" element={<HookEffect />}></Route>
@@ -101,68 +105,20 @@ ReactDOM.render(
         element={<TraversingAndRendering />}
       ></Route>
       <Route path="/RpgGame" element={<RpgGame />}></Route>
-      <Route
-        path="/UseOtherComponents"
-        element={<UseOtherComponents />}
-      ></Route>
       <Route path="/TutorialTemplate" element={<TutorialTemplate />}></Route>
       <Route path="/ReactFragment" element={<ReactFragment />}></Route>
       <Route path="/FetchOpenAI" element={<FetchOpenAI />}></Route>
       <Route path="/HookContext" element={<HookContext />}></Route>
-      <Route path="/PalindromeNumber9" element={<PalindromeNumber9 />}></Route>
-      <Route path="/RomanToInteger13" element={<RomanToInteger13 />}></Route>
-      <Route
-        path="/LongestCommonPrefix"
-        element={<LongestCommonPrefix />}
-      ></Route>
-      <Route path="/ValidParentheses" element={<ValidParentheses />}></Route>
-      <Route
-        path="/MergeTwoSortedLists"
-        element={<MergeTwoSortedLists />}
-      ></Route>
-      <Route path="/MergeKSortedLists" element={<MergeKSortedLists />}></Route>
-      <Route
-        path="/FindSumOfFirst_N_Natural_Numbers"
-        element={<FindSumOfFirstNNaturalNumbers />}
-      ></Route>
       <Route path="/IsDragging" element={<IsDragging />}></Route>
-
-      <Route
-        path="/FindSumOfFirst_N_Natural_Numbers"
-        element={<FindSumOfFirstNNaturalNumbers />}
-      ></Route>
-      <Route
-        path="/MergeArraysAndSortSlice"
-        element={<MergeArraysAndSortSlice />}
-      ></Route>
       <Route
         path="/SetTimeoutInsideAForLoopInJavaScript"
         element={<SetTimeoutInsideAForLoopInJavaScript />}
       ></Route>
       <Route
-        path="/FindFirstSingleNumber"
-        element={<FindFirstSingleNumber />}
-      ></Route>
-      <Route
-        path="/LengthOfLongestSubstring"
-        element={<LengthOfLongestSubstring />}
-      ></Route>
-      <Route
         path="/AssignASpecificNumberOfUniqueNumbers"
         element={<AssignASpecificNumberOfUniqueNumbers />}
       ></Route>
-      <Route
-        path="/ValidPalindrome125"
-        element={<ValidPalindrome125 />}
-      ></Route>
-      <Route
-        path="/FibonacciNumber509"
-        element={<FibonacciNumber509 />}
-      ></Route>
-      <Route path="/MoveZeroes283" element={<MoveZeroes283 />}></Route>
-
       {/* <Route path="/SlideOut" element={<SlideOut />}></Route> */}
-
       {/* <Route path=":teasmId" element={<NativeHTML />} /> */}
     </Routes>
   </BrowserRouter>,

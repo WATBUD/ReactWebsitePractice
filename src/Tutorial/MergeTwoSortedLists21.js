@@ -1,7 +1,7 @@
 import React ,{useEffect,useState,useMemo,useCallback }from 'react';
 import { ListNodeUI,createListNode,mergeTwoListNode} from 'Component/RenderListNode';
 
-function MergeTwoSortedLists() {
+function CustomName() {
   const listNode1 = new createListNode(1, new createListNode(2, new createListNode(4)));//124 
   const listNode2 = new createListNode(1, new createListNode(3, new createListNode(4)));//134
   // const list = {
@@ -23,5 +23,5 @@ function MergeTwoSortedLists() {
     
   );
 }
-export default MergeTwoSortedLists;
+export default CustomName;
 

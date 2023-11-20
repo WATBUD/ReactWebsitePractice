@@ -17,15 +17,8 @@ var mergeKLists = function (lists) {
   
     return mergeTwoListNode(left, right);
   }
-  
-
-
-
-
-
 //const _mergeKLists=mergeKLists([[1,4,5],[1,3,4],[2,6]]);
-
-function MergeKSortedLists() {
+function CustomName() {
 const listNodes = [new createListNode(1, new createListNode(4, new createListNode(5)))
     ,new createListNode(1, new createListNode(3, new createListNode(4)))
     ,new createListNode(2, new createListNode(6))
@@ -39,5 +32,5 @@ const _mergeKLists=mergeKLists(listNodes);
     
   );
 }
-export default MergeKSortedLists;
+export default CustomName;
 

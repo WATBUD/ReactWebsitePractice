@@ -1,5 +1,5 @@
 import React from 'react';
-function longestCommonPrefix(strs) {
+function testFunction(strs) {
   if (!strs || strs.length === 0) return "";
   if (strs.length === 1) return strs[0];
 
@@ -27,7 +27,9 @@ function longestCommonPrefix(strs) {
 function customName() {
   return (
     <div>
-      <p>longestCommonPrefix:["flower","flow","flight"] {longestCommonPrefix(["so","bison"])}</p>
+      <p>Test Array:["flower","flow","flight"] {testFunction(["so","bison"])}</p>
+      <p>Test Array:["so","bison"] {testFunction(["flower","flow","flight"])}</p>
+
     </div>
     
   );

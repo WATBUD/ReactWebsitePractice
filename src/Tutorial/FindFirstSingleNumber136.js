@@ -42,7 +42,7 @@ function singleNumberNewSet (nums) {
   return numSet.values().next().value;
 };
 
-function findFirstSingleNumber(nums) {
+function newMap(nums) {
   let map = new Map();
   for (let i = 0; i < nums.length; i++) {
     if (map.has(nums[i])) {
@@ -74,21 +74,17 @@ function hashSingleNumber(nums) {
   }
 }
 
-function customName() {
+function CustomName() {
   let questuon1 = [2, 3, 4, 2, 5, 6, 5];
   let answer1 = questuon1.find(isSingleNumber);
 
   let questuon2 = [5, 2, 7,9,1];
-  let answer2= findFirstSingleNumber(questuon2);
+  let answer2= newMap(questuon2);
 
-  let Questuon3 = [4,1,2,1,2];
-
-
-  let answer3= hashSingleNumber(Questuon3);
-  let answer4= XOR_SingleNumber(Questuon3);
-
-
-  let answerSingleNumberNewSet= singleNumberNewSet(Questuon3);
+  let questuon3 = [4,1,2,1,2];
+  let answer3= hashSingleNumber(questuon3);
+  let answer4= XOR_SingleNumber(questuon3);
+  let answerSingleNumberNewSet= singleNumberNewSet(questuon3);
 
 //   console.log(firstSingleNumber); // 3
 //   console.log('%c singleNumber', 'background: blue; color: white',singleNumber([4,1,2,1,2]));
@@ -96,15 +92,15 @@ function customName() {
 // console.log('%c binary3', 'background: blue; color: white',num2.toString(2).padStart(4, '0'));
   return (
     <div>
-      <p>findFirstSingleNumber:{JSON.stringify(questuon1)}= {answer1}</p>
-      <p>findFirstSingleNumber:{JSON.stringify(questuon2)}= {answer2}</p>
-      <p>hashSingleNumber:{JSON.stringify(Questuon3)}= {answer3}</p>
-      <p>XOR_SingleNumber:{JSON.stringify(Questuon3)}= {answer4}</p>
-      <p>XOR_binary:{JSON.stringify(arrayToBinary(Questuon3))}= {answer4}</p>
-      <p>singleNumberNewSet:{JSON.stringify(Questuon3)}= {answerSingleNumberNewSet}</p>
+      <p>use FN element,index,array:{JSON.stringify(questuon1)}= {answer1}</p>
+      <p>use newMap:{JSON.stringify(questuon2)}= {answer2}</p>
+      <p>use hash SingleNumber:{JSON.stringify(questuon3)}= {answer3}</p>
+      <p>use XOR SingleNumber:{JSON.stringify(questuon3)}= {answer4}</p>
+      <p>use XOR binary:{JSON.stringify(arrayToBinary(questuon3))}= {answer4}</p>
+      <p>use NewSet:{JSON.stringify(questuon3)}= {answerSingleNumberNewSet}</p>
     </div>
     
   );
 }
-export default customName;
+export default CustomName;
 
