@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import './DemoListUI.css';
 import SlideOut from 'UIDemo/SlideOut';
+import {ReactBasicsRoutes,PracticeExampleRoutes,technicalTrainingRoutes,} from '../PageConfig';
+
 // function DemoListUI() {
 //   return (
 //     <div id="Area1" class="GroupArea" >
@@ -20,46 +22,8 @@ import SlideOut from 'UIDemo/SlideOut';
 //   position: 'absolute', marginTop: '100px'
 // };
 class DemoListUI extends React.Component {
-  PracticeExampleLinks = [
-    { text: "IsDragging" },
-    { to: "/NativeHTML/GeneratorSlopeEquation", text: "GeneratorSlopeEquation" },
-    { to: "/NativeHTML/Canvas Fireball Follow Exercise", text: "Canvas Fireball Follow Exercise" },
-    { text: "OptionsMap" },
-    { text: "CSSTutorial" },
-    { text: "ProgressDIYUse" },
-    { text: "TraversingAndRendering" },
-    { to:"/RpgGame",text: "RPG_Game" },
-    { text: "TutorialTemplate" },
-    { text: "ReactFragment" },
-    { text: "MergeKSortedLists23" },
-    { text: "FindSumOfFirst_N_Natural_Numbers" },
-    { text: "MergeArraysAndSortSlice" },
-    { text: "SetTimeoutInsideAForLoopInJavaScript" },
-    { text: "AssignASpecificNumberOfUniqueNumbers" },
-
-  ];
-  ReactBasicsLinks = [
-    { to:"/HookEffect", text: "useEffect" },
-    { to:"/HookUseState", text: "useState" },
-    { to:"/HookContext", text: "useContext" },
-    { to:"/HookCallback", text: "useCallback" },
-    { to:"/UseOtherComponents",text: "useOtherComponents" }
-  ];
-  technical_training = [
-    { text: "LengthOfLongestSubstring3" },
-    { text: "ReverseInteger7" },
-    { text: "PalindromeNumber9" },
-    { text: "RomanToInteger13" },
-    { text: "LongestCommonPrefix14" },
-    { text: "ValidParentheses20" },
-    { text: "MergeTwoSortedLists21" },
-    { text: "ValidPalindrome125" },
-    { text: "FindFirstSingleNumber136" },
-    { text: "MoveZeroes283" },
-    { text: "FibonacciNumber509" },
 
 
-  ];
   constructor(props) {
     super(props);
     this.state = {
@@ -113,7 +77,7 @@ class DemoListUI extends React.Component {
               {/* <li><Link to={`/NativeHTML:222`} state={{ from: "props-v-state" }}>NativeHTML</Link></li> */}
               {/* <li><Link to="/DemoListUI">DemoListUI</Link></li> */}
               {/* <li ><Link to="/FetchOpenAI">FetchOpenAI</Link></li> */}
-              {this.PracticeExampleLinks.map((link,index) => (
+              {PracticeExampleRoutes.map((link,index) => (
                 <li key={index}>
                   <Link to={link.to?link.to:'/'+link.text}>{link.text}</Link>
                 </li>
@@ -132,7 +96,7 @@ class DemoListUI extends React.Component {
               React-Basics
             </label>
             <ul>
-            {this.ReactBasicsLinks.map((link,index) => (
+            {ReactBasicsRoutes.map((link,index) => (
                 <li key={index}>
                   <Link to={link.to?link.to:'/'+link.text}>{link.text}</Link>
                 </li>
@@ -140,7 +104,7 @@ class DemoListUI extends React.Component {
             </ul>
           </div>
 
-          <div id="technical_training" className="list-group">
+          <div id="technicalTrainingRoutes" className="list-group">
             <input
               id="toggle_4"
               className="btn-toggle"
@@ -152,7 +116,7 @@ class DemoListUI extends React.Component {
               Technical Training
             </label>
             <ul>
-            {this.technical_training.map((link,index) => (
+            {technicalTrainingRoutes.map((link,index) => (
                 <li key={index}>
                   <Link to={link.to?link.to:'/'+link.text}>{link.text}</Link>
                 </li>

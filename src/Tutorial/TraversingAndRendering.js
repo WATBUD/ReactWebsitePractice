@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TraversingAndRendering () {
+function CustomName () {
   const items = ['Apple', 'Banana', 'Cherry'];
 
   return (
@@ -15,5 +15,5 @@ function TraversingAndRendering () {
   );
 }
 
-export default TraversingAndRendering;
+export default CustomName;
 
