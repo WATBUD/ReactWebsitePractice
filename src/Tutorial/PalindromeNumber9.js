@@ -43,7 +43,7 @@ function customName() {
 
   return (
     <div>
-      ----------------------PalindromeNumber-------------------------- <br/>
+      ------------------------------------------------ <br/>
       <p>isPalindromeNum: {isPalindromeNum(1221)?'true':'false'}</p>
       ----------------------isPalindromeNum-------------------------- <br/>
       <p>isPalindromeString: {isPalindromeString(3344)?'true':'false'}</p>

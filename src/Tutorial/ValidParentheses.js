@@ -30,7 +30,7 @@ function isValid(string) {
 
 
 
-function ValidParentheses() {
+function CustomName() {
   return (
     <div>
       <p>"([{}])" {isValid("([{}])")?'true':'false'}</p>
@@ -38,5 +38,5 @@ function ValidParentheses() {
     
   );
 }
-export default ValidParentheses;
+export default CustomName;
 

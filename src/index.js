@@ -27,8 +27,8 @@ import HookEffect from './hook/hookEffect';
 
 
 
-import PalindromeNumber from './Tutorial/PalindromeNumber';
-import RomanToInteger from './Tutorial/RomanToInteger';
+import PalindromeNumber9 from './Tutorial/PalindromeNumber9';
+import RomanToInteger13 from './Tutorial/RomanToInteger13';
 import LongestCommonPrefix from './Tutorial/LongestCommonPrefix';
 import ValidParentheses from './Tutorial/ValidParentheses';
 import MergeTwoSortedLists from './Tutorial/MergeTwoSortedLists';
@@ -38,6 +38,7 @@ import MergeArraysAndSortSlice from './Tutorial/MergeArraysAndSortSlice';
 import SetTimeoutInsideAForLoopInJavaScript from './Tutorial/SetTimeoutInsideAForLoopInJavaScript';
 import AssignASpecificNumberOfUniqueNumbers from './Tutorial/AssignASpecificNumberOfUniqueNumbers';
 import ValidPalindrome125 from './Tutorial/ValidPalindrome125';
+import FibonacciNumber509 from './Tutorial/FibonacciNumber509';
 import MoveZeroes283 from './Tutorial/MoveZeroes283';
 
 import FindFirstSingleNumber from './Tutorial/FindFirstSingleNumber';
@@ -55,6 +56,11 @@ import reportWebVitals from './reportWebVitals';
 
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
+const routes = [
+  { path: "/OptionsMap", component: OptionsMap },
+  { path: "/CSSTutorial", component: CSSTutorial },
+  { path: "/ProgressDIYUse", component: ProgressDIYUse }
+];
 
 // ========================================
 ReactDOM.render(
@@ -65,60 +71,102 @@ ReactDOM.render(
   // <HashRouter>
   //   <Route path="/native" component={native}/>
   // </HashRouter>,
-  
+
   <BrowserRouter>
     {/* 
     <Test1 />
     <Square /> */}
     <EntryPage />
-    {/* <ProgressDIYUse/> */}
+    {/* <Route path="/useCallback" element={<useCallback />}></Route> */}
+
     <Routes>
       <Route path="/" element={<DemoListUI />} />
-      <Route path='*' element={<DemoListUI />} />
+      <Route path="*" element={<DemoListUI />} />
+      {routes.map((route) => (
+        <Route
+          key={route.path}
+          path={route.path}
+          element={React.createElement(route.component)}
+        ></Route>
+      ))}
+
       <Route path="/DemoListUI" element={<DemoListUI />}></Route>
       <Route path="/NativeHTML/:inputEmbedURL" element={<NativeHTML />}></Route>
-      <Route path="/OptionsMap" element={<OptionsMap />}></Route>
-      <Route path="/useCallback" element={<useCallback />}></Route>
-      <Route path="/CSSTutorial" element={<CSSTutorial />}></Route>
-      <Route path="/ProgressDIYUse" element={<ProgressDIYUse />}></Route>
+
       <Route path="/UseState" element={<UseState />}></Route>
       <Route path="/HookCallback" element={<HookCallback />}></Route>
       <Route path="/HookEffect" element={<HookEffect />}></Route>
-      <Route path="/TraversingAndRendering" element={<TraversingAndRendering />}></Route>
+      <Route
+        path="/TraversingAndRendering"
+        element={<TraversingAndRendering />}
+      ></Route>
       <Route path="/RpgGame" element={<RpgGame />}></Route>
-      <Route path="/UseOtherComponents" element={<UseOtherComponents />}></Route>
+      <Route
+        path="/UseOtherComponents"
+        element={<UseOtherComponents />}
+      ></Route>
       <Route path="/TutorialTemplate" element={<TutorialTemplate />}></Route>
       <Route path="/ReactFragment" element={<ReactFragment />}></Route>
       <Route path="/FetchOpenAI" element={<FetchOpenAI />}></Route>
       <Route path="/HookContext" element={<HookContext />}></Route>
-      <Route path="/PalindromeNumber" element={<PalindromeNumber />}></Route>
-      <Route path="/RomanToInteger" element={<RomanToInteger />}></Route>
-      <Route path="/LongestCommonPrefix" element={<LongestCommonPrefix />}></Route>
+      <Route path="/PalindromeNumber9" element={<PalindromeNumber9 />}></Route>
+      <Route path="/RomanToInteger13" element={<RomanToInteger13 />}></Route>
+      <Route
+        path="/LongestCommonPrefix"
+        element={<LongestCommonPrefix />}
+      ></Route>
       <Route path="/ValidParentheses" element={<ValidParentheses />}></Route>
-      <Route path="/MergeTwoSortedLists" element={<MergeTwoSortedLists />}></Route>
+      <Route
+        path="/MergeTwoSortedLists"
+        element={<MergeTwoSortedLists />}
+      ></Route>
       <Route path="/MergeKSortedLists" element={<MergeKSortedLists />}></Route>
-      <Route path="/FindSumOfFirst_N_Natural_Numbers" element={<FindSumOfFirstNNaturalNumbers />}></Route>
+      <Route
+        path="/FindSumOfFirst_N_Natural_Numbers"
+        element={<FindSumOfFirstNNaturalNumbers />}
+      ></Route>
       <Route path="/IsDragging" element={<IsDragging />}></Route>
 
-      <Route path="/FindSumOfFirst_N_Natural_Numbers" element={<FindSumOfFirstNNaturalNumbers />}></Route>
-      <Route path="/MergeArraysAndSortSlice" element={<MergeArraysAndSortSlice />}></Route>
-      <Route path="/SetTimeoutInsideAForLoopInJavaScript" element={<SetTimeoutInsideAForLoopInJavaScript/>}></Route>
-      <Route path="/FindFirstSingleNumber" element={<FindFirstSingleNumber />}></Route>
-      <Route path="/LengthOfLongestSubstring" element={<LengthOfLongestSubstring />}></Route>
-      <Route path="/AssignASpecificNumberOfUniqueNumbers" element={<AssignASpecificNumberOfUniqueNumbers/>}></Route>
-      <Route path="/ValidPalindrome125" element={<ValidPalindrome125/>}></Route>
-      <Route path="/MoveZeroes283" element={<MoveZeroes283/>}></Route>
-
-
-
+      <Route
+        path="/FindSumOfFirst_N_Natural_Numbers"
+        element={<FindSumOfFirstNNaturalNumbers />}
+      ></Route>
+      <Route
+        path="/MergeArraysAndSortSlice"
+        element={<MergeArraysAndSortSlice />}
+      ></Route>
+      <Route
+        path="/SetTimeoutInsideAForLoopInJavaScript"
+        element={<SetTimeoutInsideAForLoopInJavaScript />}
+      ></Route>
+      <Route
+        path="/FindFirstSingleNumber"
+        element={<FindFirstSingleNumber />}
+      ></Route>
+      <Route
+        path="/LengthOfLongestSubstring"
+        element={<LengthOfLongestSubstring />}
+      ></Route>
+      <Route
+        path="/AssignASpecificNumberOfUniqueNumbers"
+        element={<AssignASpecificNumberOfUniqueNumbers />}
+      ></Route>
+      <Route
+        path="/ValidPalindrome125"
+        element={<ValidPalindrome125 />}
+      ></Route>
+      <Route
+        path="/FibonacciNumber509"
+        element={<FibonacciNumber509 />}
+      ></Route>
+      <Route path="/MoveZeroes283" element={<MoveZeroes283 />}></Route>
 
       {/* <Route path="/SlideOut" element={<SlideOut />}></Route> */}
 
       {/* <Route path=":teasmId" element={<NativeHTML />} /> */}
-
     </Routes>
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 

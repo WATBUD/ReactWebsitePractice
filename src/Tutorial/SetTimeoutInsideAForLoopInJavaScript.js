@@ -19,9 +19,7 @@ function CustomName() {
   c. 如何修改能間隔一秒，每秒顯示的是該次的i？`;
   const [resultText, setResultText] = useState("none");
   const [isRunning, setIsRunning] = useState(false); // 用于追踪进程是否正在运行
-
-
-  const setTimeoutInsideAForLoopInJavaScript = (type='') => {
+  const onPressButton = (type='') => {
     if (isRunning) {
       console.log('Already running.');
       return;
@@ -121,12 +119,15 @@ function CustomName() {
 
   }; // useCallback 的依赖列表为空，意味着函数只在组件首次渲染时创建一次
 
-
-  
+  // 3. var start = Date.now(); 
+  // setTimeout(() => { 
+  //  console.log('time passed: ', Date.now() - start, 'ms'); 
+  // }, 1000); 
+  // a. 請問每次顯⽰的時間是否皆為1000ms  不是,因為有延遲 Result:1001ms  
   // useEffect(() => {
   //   // 假设您只想在组件加载时运行此函数
-  //   setTimeoutInsideAForLoopInJavaScript(type);
-  // }, [setTimeoutInsideAForLoopInJavaScript, type]);
+  //   onPressButton(type);
+  // }, [onPressButton, type]);
 
 
 
@@ -137,16 +138,16 @@ function CustomName() {
 
       {!isRunning &&(
         <Fragment>
-      <button onClick={() => setTimeoutInsideAForLoopInJavaScript('let')}>
+      <button onClick={() => onPressButton('let')}>
         Run with let
       </button>
-      <button onClick={() => setTimeoutInsideAForLoopInJavaScript('var')}>
+      <button onClick={() => onPressButton('var')}>
         Run with var
       </button>
-      <button onClick={() => setTimeoutInsideAForLoopInJavaScript('IIFE')}>
+      <button onClick={() => onPressButton('IIFE')}>
         Run with IIFE
       </button>
-      <button onClick={() => setTimeoutInsideAForLoopInJavaScript('Promise')}>
+      <button onClick={() => onPressButton('Promise')}>
         Run with Promise
       </button>
       </Fragment>)}
@@ -154,7 +155,7 @@ function CustomName() {
 
       <p>Time: {resultText}</p>
 
-      {/* <p>Run SetTimeoutInsideAForLoopInJavaScript,{type}=</p>
+      {/* <p>Run onPressButton,{type}=</p>
       <p>time:{resultText}</p> */}
 
     </div>

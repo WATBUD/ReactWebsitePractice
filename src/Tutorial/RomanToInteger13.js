@@ -29,7 +29,7 @@ function romanToInt(s) {
 
 
 
-function PalindromeNumber() {
+function PalindromeNumber9() {
   return (
     <div>
       <p>romanToInt:LVIII= {romanToInt('LVIII')}</p>
@@ -37,5 +37,5 @@ function PalindromeNumber() {
     
   );
 }
-export default PalindromeNumber;
+export default PalindromeNumber9;
 
