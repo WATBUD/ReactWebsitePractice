@@ -32,21 +32,21 @@ ReactDOM.render(
       {PracticeExampleRoutes.map((route,index) => (
         <Route
           key={index}
-          path={route.path}
+          path={route.path?route.path:'/'+route.text}
           element={React.createElement(route.component)}
         ></Route>
       ))}
       {ReactBasicsRoutes.map((route,index) => (
         <Route
           key={index}
-          path={route.path}
+          path={route.path?route.path:'/'+route.text}
           element={React.createElement(route.component)}
         ></Route>
       ))}
       {technicalTrainingRoutes.map((route,index) => (
         <Route
           key={index}
-          path={route.path}
+          path={route.path?route.path:'/'+route.text}
           element={React.createElement(route.component)}
         ></Route>
       ))}

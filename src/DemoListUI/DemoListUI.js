@@ -79,7 +79,7 @@ class DemoListUI extends React.Component {
               {/* <li ><Link to="/FetchOpenAI">FetchOpenAI</Link></li> */}
               {PracticeExampleRoutes.map((link,index) => (
                 <li key={index}>
-                  <Link to={link.to?link.to:'/'+link.text}>{link.text}</Link>
+                  <Link to={link.path?link.path:'/'+link.text}>{link.text}</Link>
                 </li>
               ))}
             </ul>
@@ -98,7 +98,7 @@ class DemoListUI extends React.Component {
             <ul>
             {ReactBasicsRoutes.map((link,index) => (
                 <li key={index}>
-                  <Link to={link.to?link.to:link.path}>{link.text}</Link>
+                  <Link to={link.path?link.path:'/'+link.text}>{link.text}</Link>
                 </li>
               ))}
             </ul>
@@ -118,7 +118,7 @@ class DemoListUI extends React.Component {
             <ul>
             {technicalTrainingRoutes.map((link,index) => (
                 <li key={index}>
-                  <Link to={link.to?link.to:'/'+link.text}>{link.text}</Link>
+                  <Link to={link.path?link.path:'/'+link.text}>{link.text}</Link>
                 </li>
               ))}
             </ul>
