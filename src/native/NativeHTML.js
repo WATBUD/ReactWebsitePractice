@@ -56,8 +56,13 @@ class NativeHTML extends React.Component {
       Name: 'ButtonRippleEffect',
     },
     {
-      URL: '/Native HTML/Algorithm/GeneratorSlopeEquation.html',
-      Name: 'GeneratorSlopeEquation',
+      URL: '/Native HTML/Algorithm/Generator SlopeEquation.html',
+      //URL: '/Native HTML/Display/Canvas Fireball Follow Exercise.html',
+      Name: 'Generator SlopeEquation',
+    },
+    {
+      URL: '/Native HTML/Display/Canvas Fireball Follow Exercise.html',
+      Name: 'Canvas Fireball Follow Exercise',
     },
     {
       URL: '/Native HTML/DynamicallyGenerated/CreateScrollBarListDemo.html',
@@ -94,10 +99,6 @@ class NativeHTML extends React.Component {
     {
       URL: '/Native HTML/Mouse/ReflectionEventParameter.html',
       Name: 'ReflectionEventParameter',
-    },
-    {
-      URL: '/Native HTML/Display/Canvas Fireball Follow Exercise.html',
-      Name: 'Canvas Fireball Follow Exercise',
     },
     {
       URL: '/Native HTML/CSSDemo/CSSReplaceClass.html',
@@ -165,12 +166,12 @@ class NativeHTML extends React.Component {
     // }
     //_navigateToPage();
     try {
-      //console.log('%c props.params_inputEmbedURL', 'background: blue; color: red', props.params['inputEmbedURL'])
-      const paramsURL=props.params['inputEmbedURL'];
+      //console.log('%c props.params_InputEmbedURL', 'background: blue; color: red', props.params['InputEmbedURL'])
+      const paramsURL=props.params['InputEmbedURL'];
 
 
       //paramsURL=this.removeTrailingSlash(paramsURL);
-      //console.log('%c result', 'background: blue; color: red', props.params['inputEmbedURL'],paramsURL)
+      //console.log('%c result', 'background: blue; color: red', props.params['InputEmbedURL'],paramsURL)
 
       var target = this.customURLList.find((x) => x.Name === paramsURL);
       console.log('%c target', 'background: blue; color: red', target)

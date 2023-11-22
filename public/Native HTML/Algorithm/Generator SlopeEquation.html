@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
-    <title>GeneratorSlopeEquation</title>
+    <title>Generator SlopeEquation</title>
     <style type="text/css">
         body {
             font-size: 12px;
@@ -24,19 +24,10 @@
 
     <label id="jsonObject"> </label>
 </body>
-<script type="text/javascript">
 
-
-    // var coordinatezzz = [[0, 0]];
-    // var ttt=coordinatezzz[0];
-    // ttt=[1234, 1111];
-    // console.log('%c coordinatezzz', 'color: red',coordinatezzz, ttt);
-
-
-
+<script>
     var temp_a = 0;
     var temp_b = 0;
-
     var coordinate1 = [0, 0];
     var coordinate2 = [100, 80];
     $("#x1-axis").on("input", function () {
@@ -93,7 +84,6 @@
         }
 
     });
-
     $("#y2-axis").on("input", function () {
         try {
             //$(this).val("0")
@@ -112,19 +102,10 @@
         }
 
     });
-
-
-
-
     //     $( "#x1-axis" ).keydown(function(eventData) {
     //   //alert( "Handler for .keydown() called." );
     //   console.log('%c axis','background: blue; color: red',eventData);
     // });
-    //this.showSlopeEquationInHtml();
-
-
-
-
     function showSlopeEquationInHtml() {
         var slopeArr = slopeEquation(coordinate1, coordinate2);
         var ag1=JSON.stringify(slopeArr);
@@ -151,14 +132,7 @@
 
         return LinearList;
     }
-    
-    
-
-
-
-
     //$( "#myDiv" ).css( "border", "3px solid red" );
-
     function LinearEquation(point1 = [0, 0], point2 = [400, 400]) {
         //直線方程式 y=ax+b; (a=Slope);
         //a= point1[1]-point2[1]/point2[0]+point1[0];斜率

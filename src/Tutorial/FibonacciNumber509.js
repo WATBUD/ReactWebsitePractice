@@ -5,12 +5,12 @@ import React, { Fragment } from "react";
 import { useState, useEffect } from "react";
 
 function CustomName() {
-  let inputN = 6;
+  let inputN = 3;
   const [logText, setLogText] = useState("");
   const [logText2, setLogText2] = useState("");
 
-  const [result, setResult] = useState("");
-  const [result2, setResult2] = useState("");
+  // const [result, setResult] = useState("");
+  // const [result2, setResult2] = useState("");
 
   let questionText = `The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. That is,
 

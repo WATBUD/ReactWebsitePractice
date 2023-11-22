@@ -51,7 +51,7 @@ ReactDOM.render(
         ></Route>
       ))}
       <Route path="/DemoListUI" element={<DemoListUI />}></Route>
-      <Route path="/NativeHTML/:inputEmbedURL" element={<NativeHTML />}></Route>
+      <Route path="/NativeHTML/:InputEmbedURL" element={<NativeHTML />}></Route>
       {/* <Route path="/SlideOut" element={<SlideOut />}></Route> */}
       {/* <Route path=":teasmId" element={<NativeHTML />} /> */}
     </Routes>

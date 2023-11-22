@@ -43,7 +43,7 @@ export const ReactBasicsRoutes = [
   { path: "/UseOtherComponents", component: UseOtherComponents,text: "useOtherComponents" },
 ];
 export const PracticeExampleRoutes = [
-  { path: "/NativeHTML/GeneratorSlopeEquation", text: "GeneratorSlopeEquation" },
+  { path: "/NativeHTML/Generator SlopeEquation", text: "Generator SlopeEquation" },
   { path: "/NativeHTML/Canvas Fireball Follow Exercise", text: "Canvas Fireball Follow Exercise" },
   { path:"/RpgGame",component: RpgGame,text: "RPG_Game" },
   { component: IsDragging, text: "IsDragging" },
