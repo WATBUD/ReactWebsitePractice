@@ -8,13 +8,14 @@ function CustomName() {
   夏令時間（3月中-11月中）：台灣時間21：30~04：00
   冬令時間（11月中-3月中）：台灣時間22：30~05：00
   `;
-
+  let corporationData = `  台灣證券交易所會在下午4點公布當天法人買賣超資料`;
 
 
 
   return (
     <div>
       <textarea id="questionText" rows="10" cols="50" value={questionText} readOnly />
+      <textarea id="questionText" rows="10" cols="50" value={corporationData} readOnly />
 
       {/* <p>Run random6(42)={questionText}</p> */}
     </div>
