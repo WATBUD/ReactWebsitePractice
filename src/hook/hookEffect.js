@@ -4,6 +4,12 @@ function Counter() {
   const [count, setCount] = useState(5);
 
   useEffect(() => {
+    console.log(
+      "%c useEffect+count",
+      "color:#BB3D00;font-family:system-ui;font-size:2rem;font-weight:bold",
+      "count:",
+      count
+    );
     document.title = `Count: ${count}`;
   }, [count]);
 

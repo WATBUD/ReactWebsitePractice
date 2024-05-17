@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Position Demo</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            margin-bottom: 20px;
+            overflow: auto;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .float-left {
+            float: left;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .position-relative {
+            position: relative;
+        }
+
+        .position-absolute {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child float-left">1</div>
+        <div class="child float-left">2</div>
+        <div class="child float-left">3</div>
+        <div class="child float-left">4</div>
+    </div>
+
+    <div class="container">
+        <div class="child float-right">1</div>
+        <div class="child float-right">2</div>
+        <div class="child float-right">3</div>
+        <div class="child float-right">4</div>
+    </div>
+
+    <div class="container position-relative">
+        <div class="child float-left">1</div>
+        <div class="child float-left">2</div>
+        <div class="child float-left">3</div>
+        <div class="child float-left">4</div>
+    </div>
+
+    <div class="container position-absolute">
+
+        <div class="child float-left">1</div>
+        <div class="child float-left">2</div>
+        <div class="child float-left">3</div>
+        <div class="child float-left">4</div>
+    </div>
+</body>
+
+</html>

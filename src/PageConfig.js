@@ -45,6 +45,8 @@ export const ReactBasicsRoutes = [
 export const PracticeExampleRoutes = [
   { path: "/NativeHTML/Generator SlopeEquation", text: "Generator SlopeEquation" },
   { path: "/NativeHTML/Canvas Fireball Follow Exercise", text: "Canvas Fireball Follow Exercise" },
+  { path: "/NativeHTML/Float Position Demo", text: "Float Position Demo" },
+
   { path:"/RpgGame",component: RpgGame,text: "RPG_Game" },
   { component: IsDragging, text: "IsDragging" },
   { component: OptionsMap, text: "OptionsMap" },
@@ -53,7 +55,6 @@ export const PracticeExampleRoutes = [
   { component: ProgressDIYUse, text: "ProgressDIYUse" },
   { component: TraversingAndRendering, text: "TraversingAndRendering" },
   { component: TutorialTemplate, text: "TutorialTemplate" },
-  { component: ReactFragment, text: "ReactFragment" },
   { component: FindSumOfFirstNNaturalNumbers, text: "FindSumOfFirst_N_Natural_Numbers" },
   { component: MergeArraysAndSortSlice, text: "MergeArraysAndSortSlice" },
   { component: SetTimeoutInsideAForLoopInJavaScript, text: "SetTimeoutInsideAForLoopInJavaScript" },

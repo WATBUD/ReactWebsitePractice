@@ -4,13 +4,32 @@ import { useParams } from 'react-router-dom';
 
 export function withRouter(Children){
   return(props)=>{
-
+    console.log(
+      "%c withRouter",
+      "color:#BB3D00;font-family:system-ui;font-size:2rem;font-weight:bold",
+      "Children:",
+      Children,
+      "props:",
+      props
+    );
     const params  = useParams();
     return <Children {...props} params={params}/>
  }
 }
 class NativeHTML extends React.Component {
   customURLList = [
+    {
+      URL: '/Native HTML/CssTutorial/Float Position Demo.html',
+      Name: 'Float Position Demo',
+    },
+    {
+      URL: '/Native HTML/Algorithm/Generator SlopeEquation.html',
+      Name: 'Generator SlopeEquation',
+    },
+    {
+      URL: '/Native HTML/Display/Canvas Fireball Follow Exercise.html',
+      Name: 'Canvas Fireball Follow Exercise',
+    },
     {
       URL: '/Native HTML/Excel/Convert Excel File To JSON.html',
       Name: 'Convert Excel File To JSON',
@@ -54,15 +73,6 @@ class NativeHTML extends React.Component {
     {
       URL: '/Native HTML/Animate/ButtonRippleEffect.html',
       Name: 'ButtonRippleEffect',
-    },
-    {
-      URL: '/Native HTML/Algorithm/Generator SlopeEquation.html',
-      //URL: '/Native HTML/Display/Canvas Fireball Follow Exercise.html',
-      Name: 'Generator SlopeEquation',
-    },
-    {
-      URL: '/Native HTML/Display/Canvas Fireball Follow Exercise.html',
-      Name: 'Canvas Fireball Follow Exercise',
     },
     {
       URL: '/Native HTML/DynamicallyGenerated/CreateScrollBarListDemo.html',
@@ -148,7 +158,6 @@ class NativeHTML extends React.Component {
     },
   ];
   urlSafe="";
-  //style="margin-top: 3vh;"
   constructor(props) {
     super(props);
     this.state = { value: 'Hello World' };
@@ -168,13 +177,18 @@ class NativeHTML extends React.Component {
     try {
       //console.log('%c props.params_InputEmbedURL', 'background: blue; color: red', props.params['InputEmbedURL'])
       const paramsURL=props.params['InputEmbedURL'];
+      console.log(
+        "%c constructor",
+        "color:#BB3D00;font-family:system-ui;font-size:2rem;font-weight:bold",
+        "paramsURL:",
+        paramsURL,
+        // "target:",
+        // target
+      );
 
 
       //paramsURL=this.removeTrailingSlash(paramsURL);
-      //console.log('%c result', 'background: blue; color: red', props.params['InputEmbedURL'],paramsURL)
-
       var target = this.customURLList.find((x) => x.Name === paramsURL);
-      console.log('%c target', 'background: blue; color: red', target)
 
       if (target !== undefined) {
         this.setURLContext(target.URL);
