@@ -29,6 +29,7 @@ import LongestCommonPrefix14 from './leetcode/LongestCommonPrefix14';
 import ValidParentheses20 from './leetcode/ValidParentheses20';
 import MergeTwoSortedLists21 from './leetcode/MergeTwoSortedLists21';
 import MergeKSortedLists23 from './leetcode/MergeKSortedLists23';
+import SameTree100 from './leetcode/SameTree100';
 import ValidPalindrome125 from './leetcode/ValidPalindrome125';
 import FindFirstSingleNumber136 from './leetcode/FindFirstSingleNumber136';
 import MoveZeroes283 from './leetcode/MoveZeroes283';
@@ -43,11 +44,7 @@ export const ReactBasicsRoutes = [
   { path: "/UseOtherComponents", component: UseOtherComponents,text: "useOtherComponents" },
 ];
 export const PracticeExampleRoutes = [
-  { path: "/NativeHTML/Generator SlopeEquation", text: "Generator SlopeEquation" },
-  { path: "/NativeHTML/Canvas Fireball Follow Exercise", text: "Canvas Fireball Follow Exercise" },
-  { path: "/NativeHTML/Float Position Demo", text: "Float Position Demo" },
-
-  { path:"/RpgGame",component: RpgGame,text: "RPG_Game" },
+  { component: RpgGame,text: "RPG_Game" },
   { component: IsDragging, text: "IsDragging" },
   { component: OptionsMap, text: "OptionsMap" },
   { component: CSSTutorial, text: "CSSTutorial" },
@@ -70,6 +67,7 @@ export const technicalTrainingRoutes = [
   { component: ValidParentheses20, text: "ValidParentheses20" },
   { component: MergeTwoSortedLists21, text: "MergeTwoSortedLists21" },
   { component: MergeKSortedLists23, text: "MergeKSortedLists23" },
+  { component: SameTree100, text: "SameTree100" },
   { component: ValidPalindrome125, text: "ValidPalindrome125" },
   { component: FindFirstSingleNumber136, text: "FindFirstSingleNumber136" },
   { component: MoveZeroes283, text: "MoveZeroes283" },

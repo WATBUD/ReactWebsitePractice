@@ -5,22 +5,6 @@ import './DemoListUI.css';
 import SlideOut from 'UIDemo/SlideOut';
 import {ReactBasicsRoutes,PracticeExampleRoutes,technicalTrainingRoutes,} from '../PageConfig';
 
-// function DemoListUI() {
-//   return (
-//     <div id="Area1" class="GroupArea" >
-//       <div id="Practice Example" class="list-group">
-//         <input id="toggle2" class="btn-toggle" type="checkbox" checked />
-//           <label class="toggleBtn" htmlFor="toggle2">Practice Example</label>
-//           <ul>
-//             <li><Link to="/Line_Graph">Line_Graph</Link></li>
-//           </ul>
-//       </div>
-//     </div>
-//   );
-// }
-// var style1 = {
-//   position: 'absolute', marginTop: '100px'
-// };
 class DemoListUI extends React.Component {
 
 
@@ -74,9 +58,11 @@ class DemoListUI extends React.Component {
               Practice Example
             </label>
             <ul>
-              {/* <li><Link to={`/NativeHTML:222`} state={{ from: "props-v-state" }}>NativeHTML</Link></li> */}
+
               {/* <li><Link to="/DemoListUI">DemoListUI</Link></li> */}
-              {/* <li ><Link to="/FetchOpenAI">FetchOpenAI</Link></li> */}
+              <li ><Link to="/NativeHTML/Generator Slope Equation">Generator Slope Equation</Link></li>
+              <li ><Link to="/NativeHTML/Canvas Fireball Follow Exercise">Canvas Fireball Follow Exercise</Link></li>
+              <li ><Link to="/NativeHTML/Float Position Demo">Float Position Demo</Link></li>
               {PracticeExampleRoutes.map((link,index) => (
                 <li key={index}>
                   <Link to={link.path?link.path:'/'+link.text}>{link.text}</Link>

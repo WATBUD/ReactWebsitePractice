@@ -32,7 +32,7 @@ ReactDOM.render(
       {PracticeExampleRoutes.map((route,index) => (
         <Route
           key={index}
-          path={route.path?route.path:'/'+route.text}
+          path={route.path?route.path:('/'+route.text)}
           element={React.createElement(route.component)}
         ></Route>
       ))}

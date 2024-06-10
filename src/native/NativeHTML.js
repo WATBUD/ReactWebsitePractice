@@ -23,8 +23,8 @@ class NativeHTML extends React.Component {
       Name: 'Float Position Demo',
     },
     {
-      URL: '/Native HTML/Algorithm/Generator SlopeEquation.html',
-      Name: 'Generator SlopeEquation',
+      URL: '/Native HTML/Algorithm/Generator Slope Equation.html',
+      Name: 'Generator Slope Equation',
     },
     {
       URL: '/Native HTML/Display/Canvas Fireball Follow Exercise.html',
