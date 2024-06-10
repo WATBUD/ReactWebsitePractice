@@ -21,18 +21,18 @@ import HookEffect from './hook/hookEffect';
 import ReactFragment from './Tutorial/ReactFragment';
 // import SlideOut from './UIDemo/SlideOut';
 //************** leetcode **************
-import LengthOfLongestSubstring3 from './Tutorial/LengthOfLongestSubstring3';
-import ReverseInteger7 from './Tutorial/ReverseInteger7';
-import PalindromeNumber9 from './Tutorial/PalindromeNumber9';
-import RomanToInteger13 from './Tutorial/RomanToInteger13';
-import LongestCommonPrefix14 from './Tutorial/LongestCommonPrefix14';
-import ValidParentheses20 from './Tutorial/ValidParentheses20';
-import MergeTwoSortedLists21 from './Tutorial/MergeTwoSortedLists21';
-import MergeKSortedLists23 from './Tutorial/MergeKSortedLists23';
-import ValidPalindrome125 from './Tutorial/ValidPalindrome125';
-import FindFirstSingleNumber136 from './Tutorial/FindFirstSingleNumber136';
-import MoveZeroes283 from './Tutorial/MoveZeroes283';
-import FibonacciNumber509 from './Tutorial/FibonacciNumber509';
+import LengthOfLongestSubstring3 from './leetcode/LengthOfLongestSubstring3';
+import ReverseInteger7 from './leetcode/ReverseInteger7';
+import PalindromeNumber9 from './leetcode/PalindromeNumber9';
+import RomanToInteger13 from './leetcode/RomanToInteger13';
+import LongestCommonPrefix14 from './leetcode/LongestCommonPrefix14';
+import ValidParentheses20 from './leetcode/ValidParentheses20';
+import MergeTwoSortedLists21 from './leetcode/MergeTwoSortedLists21';
+import MergeKSortedLists23 from './leetcode/MergeKSortedLists23';
+import ValidPalindrome125 from './leetcode/ValidPalindrome125';
+import FindFirstSingleNumber136 from './leetcode/FindFirstSingleNumber136';
+import MoveZeroes283 from './leetcode/MoveZeroes283';
+import FibonacciNumber509 from './leetcode/FibonacciNumber509';
 
 export const ReactBasicsRoutes = [
   { component: ReactFragment,text: "ReactFragment" },

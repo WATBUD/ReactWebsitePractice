@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable eqeqeq */
 /* eslint-disable no-loop-func */
-import React, { Fragment } from "react";
+import React from "react";
 import { useState, useEffect } from "react";
 
 function CustomName() {
