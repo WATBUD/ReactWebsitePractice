@@ -19,10 +19,6 @@ export function withRouter(Children){
 class NativeHTML extends React.Component {
   customURLList = [
     {
-      URL: '/Native HTML/CssTutorial/Float Position Demo.html',
-      Name: 'Float Position Demo',
-    },
-    {
       URL: '/Native HTML/Algorithm/Generator Slope Equation.html',
       Name: 'Generator Slope Equation',
     },

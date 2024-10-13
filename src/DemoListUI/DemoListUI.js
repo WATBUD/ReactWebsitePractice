@@ -62,7 +62,6 @@ class DemoListUI extends React.Component {
               {/* <li><Link to="/DemoListUI">DemoListUI</Link></li> */}
               <li ><Link to="/NativeHTML/Generator Slope Equation">Generator Slope Equation</Link></li>
               <li ><Link to="/NativeHTML/Canvas Fireball Follow Exercise">Canvas Fireball Follow Exercise</Link></li>
-              <li ><Link to="/NativeHTML/Float Position Demo">Float Position Demo</Link></li>
               {PracticeExampleRoutes.map((link,index) => (
                 <li key={index}>
                   <Link to={link.path?link.path:'/'+link.text}>{link.text}</Link>
