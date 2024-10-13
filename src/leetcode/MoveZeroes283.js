@@ -1,7 +1,6 @@
 /* eslint-disable eqeqeq */
 /* eslint-disable no-loop-func */
-import React, { Fragment } from "react";
-//import { useState } from "react";
+import React, {  } from "react";
 
 function CustomName() {
   //let inputN = 4;

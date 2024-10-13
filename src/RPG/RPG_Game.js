@@ -1,10 +1,10 @@
-import React, { useState,useEffect,useReducer,Component } from 'react';
+import React, { Component } from 'react';
 //import { withRouter } from 'react-router-dom';
 
 import "./RPG_Game.css";
 import * as RPG_GameMapConfig from './RPG_GameMapConfig.js';
 import * as RPG_GameModule from './RPG_GameModule.js';
-import BackpackPage from './BackpackPage';
+//import BackpackPage from './BackpackPage';
 import Inventory from './Inventory';
 
 class CustomName extends Component {

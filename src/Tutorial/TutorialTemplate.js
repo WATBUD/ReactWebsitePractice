@@ -1,22 +1,9 @@
-import { Alert } from "antd";
-import { useForm } from "antd/lib/form/Form";
+// import { Alert } from "antd";
+// import { useForm } from "antd/lib/form/Form";
 import React from "react";
-import { useEffect,useLayoutEffect  } from 'react';
-class ClassComponent extends React.Component {
-  componentDidMount(){
-    alert('Enter componentDidMount');
-  }
-  componentWillUnmount(){
-    alert('Enter componentWillUnmount');
-  }
-  render() {
-    return (
-      <div id="App" style={{top:'50px',position: 'absolute'}}>
-             -------------ClassComponent-------------
-      </div>
-    );
-  }
-}
+import { 
+  //useEffect,
+  useLayoutEffect  } from 'react';
 function FnComponent() {
   useLayoutEffect(()=>{
     alert('Enter useEffect DidMount');

@@ -408,6 +408,7 @@ export class MonsterManager {
 
     //console.log('%c Mons terManager_constructor:', 'color: red');
     this.generateSpecifieMonster = function (monsterName,numberOfMonsters) {
+      /* eslint no-eval: 0 */
       monsterMaplist.push(eval(`new ${monsterName}(numberOfMonsters)`));
     //console.log('%c GenerateSpecifieMonster_monsterMaplist:', 'color: red', this.monsterMaplist);
     //this.monsterMaplist.push(new GoblinMonster());
@@ -466,9 +467,9 @@ export class MonsterManager {
 
 }
 
-export const callEval = (FuncionName) => {
-  return eval(`new ${FuncionName}()`)
-};
+// export const callEval = (FuncionName) => {
+//   return eval(`new ${FuncionName}()`)
+// };
 
 
 
