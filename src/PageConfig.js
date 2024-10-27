@@ -7,7 +7,6 @@ import SetTimeoutInsideAForLoopInJavaScript from './Tutorial/SetTimeoutInsideAFo
 import AssignASpecificNumberOfUniqueNumbers from './Tutorial/AssignASpecificNumberOfUniqueNumbers';
 import CSSTutorial from './Tutorial/CSSTutorial';
 import ProgressDIYUse from './Tutorial/ProgressDIYUse';
-import TraversingAndRendering from './Tutorial/TraversingAndRendering';
 import RpgGame from './RPG/RPG_Game';
 import TutorialTemplate from './Tutorial/TutorialTemplate';
 import FetchOpenAI from './Tutorial/FetchOpenAI';
@@ -49,7 +48,6 @@ export const PracticeExampleRoutes = [
   { component: CSSTutorial, text: "CSSTutorial" },
   { component: FetchOpenAI, text: "FetchOpenAI" },
   { component: ProgressDIYUse, text: "ProgressDIYUse" },
-  { component: TraversingAndRendering, text: "TraversingAndRendering" },
   { component: TutorialTemplate, text: "TutorialTemplate" },
   { component: FindSumOfFirstNNaturalNumbers, text: "FindSumOfFirst_N_Natural_Numbers" },
   { component: MergeArraysAndSortSlice, text: "MergeArraysAndSortSlice" },
